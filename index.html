@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-      <script>
+<head>
+  <!-- 1) On applique le <base> AVANT TOUT -->
+  <script>
     const isGithub = location.hostname.includes("github.io");
     if (isGithub) {
       document.write('<base href="/prefixtel/">');
     }
   </script>
-    <!-- Charge les meta-tags globaux depuis ton partial -->
-    <script>
-      fetch("/partials/meta.html")
-        .then((r) => r.text())
-        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
-    </script>
-  </head>
+
+  <!-- 2) Ensuite on charge meta.html AVEC UN CHEMIN RELATIF -->
+  <script>
+    fetch("partials/meta.html")
+      .then((r) => r.text())
+      .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
+</head>
+
 
   <body>
     <!-- Header chargé dynamiquement -->
