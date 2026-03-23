@@ -1,68 +1,69 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <script>
-      fetch("../partials/meta.html")
-        .then((r) => r.text())
-        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
-    </script>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="/assets/img/fav.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="/assets/img/fav.png"
-    />
-    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
-    <title>Indicatifs téléphoniques par pays | prefixeTel</title>
+<head>
 
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/components.css" />
-    <link rel="stylesheet" href="/assets/css/pages/pays.css" />
-    <link rel="stylesheet" href="/assets/css/responsive.css" />
-    <link rel="stylesheet" href="/assets/css/pays.css" />
-  </head>
+  <!-- 1) On applique le <base> AVANT TOUT -->
+  <script>
+    if (location.hostname.includes("github.io")) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
 
-  <body>
-    <div id="header-placeholder"></div>
+  <!-- 2) Charger meta.html -->
+  <script>
+    fetch("partials/meta.html")
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
 
-    <main class="site-main">
-      <section class="country-hero">
-        <div class="container">
-          <h1>
-            Liste complète des indicatifs téléphoniques internationaux (pays +
-            territoires)
-          </h1>
-          <h2>(231 entrées répertoriées)</h2>
-          <p class="country-hero-subtitle">
-            Recherchez un pays ou parcourez les continents.
-          </p>
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
 
-          <div class="search-box">
-            <input type="text" id="search" placeholder="Rechercher un pays…" />
-          </div>
+  <title>Indicatifs téléphoniques par pays | prefixeTel</title>
+
+  <!-- CSS RELATIFS -->
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/pages/pays.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <link rel="stylesheet" href="assets/css/pays.css" />
+
+</head>
+
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <main class="site-main">
+    <section class="country-hero">
+      <div class="container">
+        <h1>
+          Liste complète des indicatifs téléphoniques internationaux (pays + territoires)
+        </h1>
+        <h2>(231 entrées répertoriées)</h2>
+        <p class="country-hero-subtitle">
+          Recherchez un pays ou parcourez les continents.
+        </p>
+
+        <div class="search-box">
+          <input type="text" id="search" placeholder="Rechercher un pays…" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="country-section">
-        <div class="container" id="countries-container">
-          <!-- Contenu généré automatiquement -->
-        </div>
-      </section>
-    </main>
+    <section class="country-section">
+      <div class="container" id="countries-container">
+        <!-- Contenu généré automatiquement -->
+      </div>
+    </section>
+  </main>
 
-    <div id="footer-placeholder"></div>
+  <div id="footer-placeholder"></div>
 
-    <!-- Script dynamique -->
-    <script src="/assets/js/pays.js"></script>
+  <!-- JS RELATIFS -->
+  <script src="assets/js/pays.js"></script>
+  <script src="assets/js/main.js"></script>
 
-    <!-- Header + Footer loader -->
-    <script src="/assets/js/main.js"></script>
-  </body>
+</body>
 </html>
