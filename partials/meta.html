@@ -5,7 +5,7 @@
 
 <meta name="author" content="prefixeTel" />
 
-<!-- OpenGraph génériques (sans title/description pour éviter les conflits) -->
+<!-- OpenGraph génériques -->
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/assets/img/og-image.png" />
 <meta property="og:url" content="https://prefixetel.fr" />
@@ -34,3 +34,70 @@
     navigator.serviceWorker.register("/service-worker.js");
   }
 </script>
+
+<!-- ========== AXEPTIO (Consent Mode V2) ========== -->
+<script>
+  window.axeptioSettings = {
+    clientId: "69c17f0f411d19d4fcb16196",
+    cookiesVersion: "4b5ef68b-2c83-48c8-b733-6b6d75014009",
+    googleConsentMode: {
+      default: {
+        analytics_storage: "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        wait_for_update: 500,
+      },
+    },
+  };
+
+  (function (d, s) {
+    var t = d.getElementsByTagName(s)[0],
+      e = d.createElement(s);
+    e.async = true;
+    e.src = "//static.axept.io/sdk.js";
+    t.parentNode.insertBefore(e, t);
+  })(document, "script");
+</script>
+
+<!-- ========== GOOGLE CONSENT MODE V2 ========== -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  // Par défaut : refus
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    analytics_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
+
+  // Mise à jour automatique selon Axeptio
+  document.addEventListener("axeptio_cookie_consent", function (event) {
+    const consent = event.detail;
+
+    const ads = consent.purposes.includes("publicite");
+    const analytics = consent.purposes.includes("mesure_audience");
+
+    gtag("consent", "update", {
+      ad_storage: ads ? "granted" : "denied",
+      analytics_storage: analytics ? "granted" : "denied",
+      ad_user_data: ads ? "granted" : "denied",
+      ad_personalization: ads ? "granted" : "denied",
+    });
+  });
+</script>
+<script>
+  console.log("META PREFIXETEL CHARGÉ");
+</script>
+<!-- ========== GOOGLE TAG (si tu utilises Google Ads / Analytics) ========== -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=TON_ID_GOOGLE"></script>
+<script>
+gtag('js', new Date());
+gtag('config', 'TON_ID_GOOGLE');
+</script>
+-->
