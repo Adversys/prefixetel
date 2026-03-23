@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Irlande — Indicatif +353 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇮🇪</span>
+            <div>
+              <h1>Irlande — Indicatif téléphonique +353</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler l’Irlande depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Dublin">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+353</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Dublin</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+0 / UTC+1 (été)</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler l’Irlande depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro irlandais depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>353</strong> +
+                <strong>indicatif local</strong> +
+                <strong>numéro</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>(1) 234 5678 → +353 1 234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>353</strong>.</li>
+                <li>
+                  Ajoutez l’indicatif local (ex : <strong>1</strong> pour
+                  Dublin).
+                </li>
+                <li>Terminez par le numéro.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 353 1 234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+353</strong> puis l’indicatif.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+353 87 987 6543</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Irlande</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Numéros à 7 à 9 chiffres (hors indicatif international).
+                </li>
+                <li>
+                  Format national : <strong>0A XXX XXXX</strong> ou
+                  <strong>0AA XXX XXX</strong>.
+                </li>
+                <li>
+                  Format international : <strong>+353 A XXX XXXX</strong>.
+                </li>
+                <li>Le 0 national disparaît à l’international.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs locaux</h3>
+              <ul class="country-list">
+                <li><strong>1</strong> : Dublin</li>
+                <li><strong>21</strong> : Cork</li>
+                <li><strong>61</strong> : Limerick</li>
+                <li><strong>91</strong> : Galway</li>
+                <li><strong>51</strong> : Waterford</li>
+                <li><strong>83 / 85 / 86 / 87 / 89</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112 / 999</strong> : urgences</li>
+                <li><strong>1800</strong> : numéros gratuits</li>
+                <li><strong>1850 / 1890</strong> : services tarifés</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers l’Irlande</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro irlandais : <code>(1) 234 5678</code></p>
+              <p>À composer : <code>00 353 1 234 5678</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro irlandais : <code>(21) 987 654</code></p>
+              <p>À composer : <code>00 353 21 987 654</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro irlandais : <code>(87) 456 7890</code></p>
+              <p>À composer : <code>00 353 87 456 7890</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler l’Irlande</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers l’Irlande</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 353 1 234 5678</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 353 21 987 654</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 353 87 456 7890</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 353 61 234 567</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler l’Irlande avec l’indicatif +353</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de l’Irlande est-il +353 ?</h3>
+              <p>
+                L’indicatif +353 est attribué à l’Irlande par l’UIT dans le
+                cadre du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 national ?</h3>
+              <p>
+                Oui. Le 0 utilisé dans le format national ne doit pas être
+                composé depuis l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro irlandais ?</h3>
+              <p>
+                Il commence par <strong>+353</strong> suivi d’un indicatif local
+                ou mobile.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il en Irlande ?</h3>
+              <p>Oui, le 112 et le 999 sont les numéros d’urgence nationaux.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/royaume-uni.html">Royaume-Uni (+44)</a></li>
+            <li><a href="/pays/france.html">France (+33)</a></li>
+            <li><a href="/pays/islande.html">Islande (+354)</a></li>
+            <li><a href="/pays/pays-bas.html">Pays-Bas (+31)</a></li>
+            <li><a href="/pays/belgique.html">Belgique (+32)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

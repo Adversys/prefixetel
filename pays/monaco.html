@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Monaco — Indicatif +377 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇲🇨</span>
+            <div>
+              <h1>Monaco — Indicatif téléphonique +377</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler Monaco depuis l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Monaco">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+377</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Monaco</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+1</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler Monaco depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro monégasque depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>377</strong> +
+                <strong>numéro local (8 chiffres)</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>93 15 67 89 → +377 93 15 67 89</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>377</strong>.</li>
+                <li>Terminez par le numéro monégasque.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 377 93 15 67 89</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+377</strong> puis le numéro.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+377 6 12 34 56 78</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone à Monaco</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>Numéros à <strong>8 chiffres</strong>.</li>
+                <li>Aucun indicatif régional : plan unifié.</li>
+                <li>Format national : <strong>XX XX XX XX</strong>.</li>
+                <li>
+                  Format international : <strong>+377 XX XX XX XX</strong>.
+                </li>
+                <li>Aucun 0 à retirer.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Types de numéros</h3>
+              <ul class="country-list">
+                <li><strong>9X XX XX XX</strong> : lignes fixes</li>
+                <li><strong>6X XX XX XX</strong> : mobiles</li>
+                <li><strong>8XX</strong> : numéros spéciaux</li>
+                <li><strong>90X</strong> : numéros surtaxés</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>17</strong> : police</li>
+                <li><strong>18</strong> : pompiers</li>
+                <li><strong>15</strong> : ambulance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers Monaco</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro monégasque : <code>93 15 67 89</code></p>
+              <p>À composer : <code>00 377 93 15 67 89</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro monégasque : <code>6 12 34 56 78</code></p>
+              <p>À composer : <code>00 377 6 12 34 56 78</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro monégasque : <code>98 45 67 12</code></p>
+              <p>À composer : <code>00 377 98 45 67 12</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler Monaco</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers Monaco</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 377 93 15 67 89</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 377 6 12 34 56 78</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 377 98 45 67 12</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 377 97 12 34 56</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler Monaco avec l’indicatif +377</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de Monaco est-il +377 ?</h3>
+              <p>
+                Monaco utilisait autrefois l’indicatif français (+33) avant
+                d’obtenir son propre indicatif +377 en 1996.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Y a‑t‑il un 0 à retirer ?</h3>
+              <p>Non. Les numéros monégasques ne commencent jamais par 0.</p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro monégasque ?</h3>
+              <p>
+                Il commence par <strong>+377</strong> suivi d’un numéro à 8
+                chiffres.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il à Monaco ?</h3>
+              <p>Oui, le 112 est opérationnel dans tout le pays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/france.html">France (+33)</a></li>
+            <li><a href="/pays/italie.html">Italie (+39)</a></li>
+            <li><a href="/pays/suisse.html">Suisse (+41)</a></li>
+            <li><a href="/pays/espagne.html">Espagne (+34)</a></li>
+            <li><a href="/pays/andorre.html">Andorre (+376)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

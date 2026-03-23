@@ -1,0 +1,361 @@
+/* ===== LAYOUT GLOBAL PAYS ===== */
+.country-layout {
+  padding: 2rem 0 4rem;
+}
+
+/* ===== HERO PAYS ===== */
+.country-hero {
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.country-hero-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.country-flag {
+  font-size: 3rem;
+}
+
+.country-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.country-hero-subtitle {
+  margin-top: 0.3rem;
+  color: var(--text-soft);
+}
+
+/* META HERO */
+.country-hero-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.country-hero-meta > div {
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-soft);
+  margin-bottom: 0.2rem;
+}
+
+.meta-value {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ===== SECTIONS ===== */
+.country-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.country-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== GRID BLOCS ===== */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.country-block {
+  padding: 1.4rem 1.6rem;
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+.country-block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== LISTES ===== */
+.country-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+}
+
+.country-list li {
+  margin-bottom: 0.4rem;
+  color: var(--text-soft);
+}
+
+/* ===== HIGHLIGHT ===== */
+.country-highlight {
+  margin: 0.8rem 0;
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  background: var(--violet-light);
+}
+
+/* ===== EXEMPLES ===== */
+.country-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}
+
+.country-examples h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== TABLE ===== */
+.country-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.country-table th,
+.country-table td {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.country-table th {
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-soft);
+}
+
+/* ===== FAQ ===== */
+.country-faq {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.country-faq-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ===== LIENS AUTRES PAYS ===== */
+.country-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.country-links li {
+  margin-bottom: 0.4rem;
+}
+
+.country-links a {
+  color: var(--violet);
+  font-weight: 500;
+}
+
+.country-links a:hover {
+  color: var(--violet-dark);
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .country-hero-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .country-links {
+    columns: 1;
+  }
+}
+
+/* ===== LAYOUT ===== */
+.tips-layout {
+  padding: 2rem 0 4rem;
+}
+
+/* ===== HERO ===== */
+.tips-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.tips-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.tips-subtitle {
+  margin-top: 0.5rem;
+  color: var(--text-soft);
+  font-size: 1.15rem;
+}
+
+/* ===== SECTIONS ===== */
+.tips-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tips-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.tips-section h3 {
+  font-size: 1.2rem;
+  margin: 1.2rem 0 0.6rem;
+}
+
+.tips-section h4 {
+  font-size: 1.05rem;
+  margin: 1rem 0 0.4rem;
+}
+
+/* ===== LISTES ===== */
+.tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.tips-list li {
+  margin-bottom: 0.4rem;
+  color: var(--text-soft);
+}
+
+/* ===== PREFIX GRID ===== */
+.tips-prefix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 0.6rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.tips-prefix-grid code {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  text-align: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/* ===== CODE ===== */
+code {
+  background: var(--bg-soft);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .tips-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ===== PAGE À PROPOS ===== */
+
+.about-layout {
+  padding: 2rem 0 4rem;
+}
+
+/* HERO */
+.about-hero {
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.about-subtitle {
+  margin-top: 0.5rem;
+  color: var(--text-soft);
+  font-size: 1.15rem;
+}
+
+/* SECTIONS */
+.about-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.about-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.about-block {
+  padding: 1.4rem 1.6rem;
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+/* LISTES */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.about-list li {
+  margin-bottom: 0.4rem;
+  color: var(--text-soft);
+}
+
+/* CONTACT */
+.about-contact {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,101 @@
+/* ========== LAYOUT.CSS ========== */
+
+/* HEADER */
+.site-header {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.logo span {
+  background: var(--violet-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* NAVIGATION (DESKTOP) */
+.main-nav {
+  display: flex;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 2.8rem;
+  list-style: none;
+}
+
+.main-nav a {
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  border-radius: 6px;
+  transition: var(--transition);
+}
+
+.main-nav a:hover {
+  color: var(--violet);
+  background: var(--violet-light);
+}
+
+/* MENU MOBILE BUTTON */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* FOOTER */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-soft);
+  margin-top: 3rem;
+}
+
+/* SECTIONS */
+section {
+  padding: 3rem 0;
+}
+
+/* Style spécial pour le lien du simulateur */
+.simulateur-link {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+/* Neutralise le hover global du menu */
+.main-nav a.simulateur-link:hover {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  background-color: transparent !important;
+  filter: brightness(1.1);
+}

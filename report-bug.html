@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signaler un bug — PrefixeTel</title>
+
+    <link rel="stylesheet" href="/assets/css/variables.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <main class="bug-container">
+      <h1 class="bug-title">🐞 Signaler un bug</h1>
+
+      <p class="bug-subtitle">
+        Merci de contribuer à améliorer PrefixeTel.<br />
+        Les informations demandées servent uniquement à vous répondre.<br />
+        Elles ne sont <strong>jamais conservées</strong>.
+      </p>
+
+      <form id="bug-form" class="bug-form">
+        <!-- NOM (facultatif) -->
+        <div class="bug-field">
+          <label for="name">Votre nom (facultatif)</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" />
+        </div>
+
+        <!-- EMAIL (facultatif) -->
+        <div class="bug-field">
+          <label for="email">Votre adresse email (facultatif)</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@exemple.com"
+          />
+        </div>
+
+        <!-- PAGE (obligatoire) -->
+        <div class="bug-field">
+          <label for="page">Page concernée *</label>
+          <input
+            type="text"
+            id="page"
+            name="page"
+            placeholder="Ex : /pays/france.html"
+            required
+          />
+        </div>
+
+        <!-- DESCRIPTION (obligatoire) -->
+        <div class="bug-field">
+          <label for="description">Description du bug *</label>
+          <textarea
+            id="description"
+            name="description"
+            rows="6"
+            placeholder="Expliquez ce qui ne fonctionne pas…"
+            required
+          ></textarea>
+        </div>
+
+        <!-- NAVIGATEUR (optionnel) -->
+        <div class="bug-field">
+          <label for="browser">Navigateur (optionnel)</label>
+          <input
+            type="text"
+            id="browser"
+            name="browser"
+            placeholder="Chrome, Safari, Firefox…"
+          />
+        </div>
+
+        <button type="submit" class="bug-submit">Envoyer le rapport</button>
+
+        <p id="bug-success" class="bug-success">
+          Merci ! Votre rapport a été envoyé.
+        </p>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      // Simulation d’envoi (à remplacer par un webhook plus tard)
+      document
+        .getElementById("bug-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          document.getElementById("bug-success").style.display = "block";
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

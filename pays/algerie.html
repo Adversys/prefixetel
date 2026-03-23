@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+    <title>Algérie — Indicatif +213 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇩🇿</span>
+            <div>
+              <h1>Algérie — Indicatif téléphonique +213</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler l’Algérie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Africa/Algiers">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+213</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Afrique</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Alger</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+1</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler l’Algérie depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro algérien depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>213</strong> +
+                <strong>numéro sans le 0</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>06 12 34 56 78 → +213 6 12 34 56 78</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>213</strong>.</li>
+                <li>Terminez par le numéro algérien sans le 0.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 213 21 12 34 56</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+213</strong> puis le numéro sans le 0.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+213 6 12 34 56 78</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Algérie</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Les numéros algériens font <strong>9 chiffres</strong> (sans
+                  le 0).
+                </li>
+                <li>Format national : <strong>0X XX XX XX XX</strong>.</li>
+                <li>
+                  Format international : <strong>+213 X XX XX XX XX</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Préfixes géographiques (fixes)</h3>
+              <ul class="country-list">
+                <li><strong>021</strong> : Alger</li>
+                <li><strong>031</strong> : Oran</li>
+                <li><strong>041</strong> : Annaba</li>
+                <li><strong>043</strong> : Tlemcen</li>
+                <li><strong>049</strong> : Ghardaïa</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Mobiles et numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>05</strong> : mobiles (Mobilis)</li>
+                <li><strong>06</strong> : mobiles (Djezzy)</li>
+                <li><strong>07</strong> : mobiles (Ooredoo)</li>
+                <li><strong>080</strong> : numéros gratuits</li>
+                <li><strong>089</strong> : services surtaxés</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers l’Algérie</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro algérien : <code>021 12 34 56</code></p>
+              <p>À composer : <code>00 213 21 12 34 56</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro algérien : <code>06 12 34 56 78</code></p>
+              <p>À composer : <code>00 213 6 12 34 56 78</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Canada</h3>
+              <p>Numéro algérien : <code>041 23 45 67</code></p>
+              <p>À composer : <code>011 213 41 23 45 67</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler l’Algérie</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers l’Algérie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 213 21 12 34 56</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 213 6 12 34 56 78</code></td>
+              </tr>
+              <tr>
+                <td>Canada / USA</td>
+                <td>011</td>
+                <td><code>011 213 41 23 45 67</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 213 21 12 34 56</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler l’Algérie avec l’indicatif +213</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi faut‑il enlever le 0 du numéro algérien ?</h3>
+              <p>
+                Le 0 est un préfixe national. Lors d’un appel international, il
+                est remplacé par <strong>+213</strong>.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro algérien ?</h3>
+              <p>
+                Les numéros algériens commencent par <strong>0</strong> en
+                national et par <strong>+213</strong> en international.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment appeler un mobile algérien ?</h3>
+              <p>
+                Remplacez le 0 par <strong>+213</strong> :
+                <code>06 12 34 56 78 → +213 6 12 34 56 78</code>.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Les numéros 089 sont‑ils surtaxés ?</h3>
+              <p>
+                Oui, ce sont des numéros premium facturés plus cher selon le
+                service.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/maroc.html">Maroc (+212)</a></li>
+            <li><a href="/pays/tunisie.html">Tunisie (+216)</a></li>
+            <li><a href="/pays/france.html">France (+33)</a></li>
+            <li><a href="/pays/espagne.html">Espagne (+34)</a></li>
+            <li><a href="/pays/italie.html">Italie (+39)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

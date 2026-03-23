@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Albanie — Indicatif +355 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇦🇱</span>
+            <div>
+              <h1>Albanie — Indicatif téléphonique +355</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler l’Albanie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Tirane">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+355</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Tirana</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+1</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler l’Albanie depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro albanais depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>355</strong> +
+                <strong>indicatif local</strong> +
+                <strong>numéro</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>(4) 223 4567 → +355 4 223 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>355</strong>.</li>
+                <li>
+                  Ajoutez l’indicatif local (ex : <strong>4</strong> pour
+                  Tirana).
+                </li>
+                <li>Terminez par le numéro.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 355 4 223 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+355</strong> puis l’indicatif local.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+355 68 123 4567</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Albanie</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>Format européen classique.</li>
+                <li>
+                  Format national : <strong>0AA XXX XXX</strong> ou
+                  <strong>0A XXX XXXX</strong>.
+                </li>
+                <li>
+                  Format international : <strong>+355 AA XXX XXX</strong>.
+                </li>
+                <li>Le 0 national disparaît à l’international.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs locaux</h3>
+              <ul class="country-list">
+                <li><strong>4</strong> : Tirana</li>
+                <li><strong>52</strong> : Durrës</li>
+                <li><strong>54</strong> : Elbasan</li>
+                <li><strong>82</strong> : Shkodër</li>
+                <li><strong>69 / 68</strong> : Mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>129</strong> : police</li>
+                <li><strong>127</strong> : ambulance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers l’Albanie</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro albanais : <code>(4) 223 4567</code></p>
+              <p>À composer : <code>00 355 4 223 4567</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro albanais : <code>(52) 345 678</code></p>
+              <p>À composer : <code>00 355 52 345 678</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro albanais : <code>(68) 123 4567</code></p>
+              <p>À composer : <code>00 355 68 123 4567</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler l’Albanie</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers l’Albanie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 355 4 223 4567</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 355 52 345 678</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 355 68 123 4567</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 355 54 987 654</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler l’Albanie avec l’indicatif +355</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de l’Albanie est-il +355 ?</h3>
+              <p>
+                L’indicatif +355 est attribué à l’Albanie par l’UIT dans le
+                cadre du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 comme en Europe ?</h3>
+              <p>
+                Oui. Le 0 national disparaît lorsque vous composez depuis
+                l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro albanais ?</h3>
+              <p>
+                Il commence par <strong>+355</strong> suivi d’un indicatif local
+                (1 à 2 chiffres).
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Les numéros 112 fonctionnent-ils en Albanie ?</h3>
+              <p>
+                Oui, le 112 est le numéro d’urgence européen et fonctionne en
+                Albanie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/kosovo.html">Kosovo (+383)</a></li>
+            <li><a href="/pays/grece.html">Grèce (+30)</a></li>
+            <li><a href="/pays/italie.html">Italie (+39)</a></li>
+            <li><a href="/pays/macedoine.html">Macédoine du Nord (+389)</a></li>
+            <li><a href="/pays/montenegro.html">Monténégro (+382)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

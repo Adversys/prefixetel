@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Suède — Indicatif +46 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇸🇪</span>
+            <div>
+              <h1>Suède — Indicatif téléphonique +46</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler la Suède depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Stockholm">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+46</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Stockholm</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+1</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la Suède depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro suédois depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>46</strong> +
+                <strong>numéro sans le 0 national</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>08 123 4567 → +46 8 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>46</strong>.</li>
+                <li>Retirez le <strong>0</strong> national.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 46 8 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+46</strong> puis le numéro sans le 0.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+46 70 987 6543</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Suède</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Numéros à <strong>7 à 9 chiffres</strong> (hors indicatif
+                  international).
+                </li>
+                <li>
+                  Format national : <strong>0A XXX XXXX</strong> ou
+                  <strong>0AA XXX XXX</strong>.
+                </li>
+                <li>Format international : <strong>+46 A XXX XXXX</strong>.</li>
+                <li>Le 0 national disparaît à l’international.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs géographiques</h3>
+              <ul class="country-list">
+                <li><strong>8</strong> : Stockholm</li>
+                <li><strong>31</strong> : Göteborg</li>
+                <li><strong>40</strong> : Malmö</li>
+                <li><strong>18</strong> : Uppsala</li>
+                <li><strong>46</strong> : Lund</li>
+                <li><strong>70 / 72 / 73 / 76</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>114 14</strong> : police (non urgent)</li>
+                <li><strong>1177</strong> : assistance médicale</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la Suède</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro suédois : <code>08 123 4567</code></p>
+              <p>À composer : <code>00 46 8 123 4567</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro suédois : <code>70 987 6543</code></p>
+              <p>À composer : <code>00 46 70 987 6543</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro suédois : <code>31 345 6789</code></p>
+              <p>À composer : <code>00 46 31 345 6789</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la Suède</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la Suède</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 46 8 123 4567</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 46 70 987 6543</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 46 31 345 6789</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 46 40 234 5678</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la Suède avec l’indicatif +46</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de la Suède est‑il +46 ?</h3>
+              <p>
+                L’indicatif +46 est attribué à la Suède par l’UIT dans le cadre
+                du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 national ?</h3>
+              <p>
+                Oui. Le 0 utilisé dans le format national ne doit pas être
+                composé depuis l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro suédois ?</h3>
+              <p>
+                Il commence par <strong>+46</strong> suivi d’un indicatif local
+                ou mobile.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne‑t‑il en Suède ?</h3>
+              <p>Oui, le 112 est pleinement opérationnel dans tout le pays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/norvege.html">Norvège (+47)</a></li>
+            <li><a href="/pays/finlande.html">Finlande (+358)</a></li>
+            <li><a href="/pays/danemark.html">Danemark (+45)</a></li>
+            <li><a href="/pays/islande.html">Islande (+354)</a></li>
+            <li><a href="/pays/allemagne.html">Allemagne (+49)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+    <title>France — Indicatif +33 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO PAYS -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇫🇷</span>
+            <div>
+              <h1>France — Indicatif téléphonique +33</h1>
+              <p class="country-hero-subtitle">
+                Comprendre et utiliser correctement l’indicatif +33 pour appeler
+                la France depuis l’étranger.
+              </p>
+            </div>
+          </div>
+
+<div class="country-hero-meta" data-timezone="Europe/Paris">
+  <div>
+    <span class="meta-label">Indicatif international</span>
+    <span class="meta-value">+33</span>
+  </div>
+  <div>
+    <span class="meta-label">Continent</span>
+    <span class="meta-value">Europe</span>
+  </div>
+  <div>
+    <span class="meta-label">Capitale</span>
+    <span class="meta-value">Paris</span>
+  </div>
+  <div>
+    <span class="meta-label">Fuseau horaire</span>
+    <span class="meta-value">UTC+1 / UTC+2</span>
+  </div>
+
+  <!-- HEURE AUTO -->
+  <div>
+    <span class="meta-label">Heure locale</span>
+    <span class="meta-value" id="local-time">--:--</span>
+  </div>
+</div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER LA FRANCE -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la France depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>
+                Pour appeler un numéro français depuis l’étranger, utilisez le
+                format :
+              </p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>33</strong> +
+                <strong>numéro sans le 0 initial</strong>
+              </p>
+              <p>
+                Exemple pour un mobile français :<br />
+                <code>06 12 34 56 78 → +33 6 12 34 56 78</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez d’abord le préfixe international de votre pays (ex :
+                  <strong>00</strong> en Europe).
+                </li>
+                <li>
+                  Ajoutez ensuite <strong>33</strong> (indicatif de la France).
+                </li>
+                <li>
+                  Terminez par le numéro français
+                  <strong>sans le 0</strong> initial.
+                </li>
+              </ul>
+              <p>
+                Exemple depuis l’Allemagne :<br />
+                <code>00 33 1 23 45 67 89</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>
+                  Vous pouvez utiliser le signe <strong>+</strong> à la place du
+                  préfixe international.
+                </li>
+                <li>
+                  Tapez <strong>+33</strong> puis le numéro français sans le 0.
+                </li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+33 6 12 34 56 78</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE DES NUMÉROS FRANÇAIS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en France</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Les numéros français comportent
+                  <strong>10 chiffres</strong> au format national.
+                </li>
+                <li>
+                  Ils commencent généralement par <strong>0</strong> en France.
+                </li>
+                <li>
+                  Au format international, on enlève le 0 et on ajoute
+                  <strong>+33</strong>.
+                </li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>01 23 45 67 89 → +33 1 23 45 67 89</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Préfixes géographiques (fixes)</h3>
+              <ul class="country-list">
+                <li><strong>01</strong> : Paris / Île-de-France</li>
+                <li><strong>02</strong> : Nord-Ouest</li>
+                <li><strong>03</strong> : Nord-Est</li>
+                <li><strong>04</strong> : Sud-Est</li>
+                <li><strong>05</strong> : Sud-Ouest</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Mobiles et numéros spéciaux</h3>
+              <ul class="country-list">
+                <li>
+                  <strong>06</strong> et <strong>07</strong> : numéros mobiles.
+                </li>
+                <li>
+                  <strong>08</strong> : services spéciaux (SAV, services
+                  clients, etc.).
+                </li>
+                <li>
+                  <strong>09</strong> : numéros VoIP (téléphonie sur Internet).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES CONCRETS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la France</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro français : <code>04 72 12 34 56</code></p>
+              <p>À composer : <code>00 33 4 72 12 34 56</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro français : <code>06 12 34 56 78</code></p>
+              <p>À composer : <code>00 33 6 12 34 56 78</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Canada</h3>
+              <p>Numéro français : <code>01 23 45 67 89</code></p>
+              <p>À composer : <code>011 33 1 23 45 67 89</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPELER LA FRANCE DEPUIS DIFFÉRENTS PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la France</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la France</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 33 6 12 34 56 78</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 33 4 50 12 34 56</code></td>
+              </tr>
+              <tr>
+                <td>Canada / USA</td>
+                <td>011</td>
+                <td><code>011 33 1 23 45 67 89</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 33 6 12 34 56 78</code></td>
+              </tr>
+              <tr>
+                <td>Sénégal</td>
+                <td>00</td>
+                <td><code>00 33 1 23 45 67 89</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la France avec l’indicatif +33</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi faut-il enlever le 0 du numéro français ?</h3>
+              <p>
+                Le 0 au début d’un numéro français est un préfixe national. Lors
+                d’un appel international, il est remplacé par l’indicatif du
+                pays, ici <strong>+33</strong>. On enlève donc le 0 pour éviter
+                une numérotation incorrecte.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>
+                Comment reconnaître un numéro français au format international ?
+              </h3>
+              <p>
+                Un numéro français au format international commence par
+                <strong>+33</strong>, suivi de 9 chiffres. Exemple :
+                <code>+33 6 12 34 56 78</code>.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment appeler un portable français depuis l’étranger ?</h3>
+              <p>
+                Remplacez le 0 par <strong>+33</strong> et composez le reste du
+                numéro. Exemple :
+                <code>06 12 34 56 78 → +33 6 12 34 56 78</code>.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Les numéros commençant par 08 ou 09 sont-ils surtaxés ?</h3>
+              <p>
+                Les numéros en <strong>08</strong> peuvent être gratuits,
+                facturés au prix d’un appel local ou surtaxés selon le service.
+                Les numéros en <strong>09</strong> sont généralement des numéros
+                VoIP, facturés comme un appel classique.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/belgique.html">Belgique (+32)</a></li>
+            <li><a href="/pays/suisse.html">Suisse (+41)</a></li>
+            <li><a href="/pays/espagne.html">Espagne (+34)</a></li>
+            <li><a href="/pays/italie.html">Italie (+39)</a></li>
+            <li><a href="/pays/maroc.html">Maroc (+212)</a></li>
+            <li><a href="/pays/tunisie.html">Tunisie (+216)</a></li>
+            <li><a href="/pays/canada.html">Canada (+1)</a></li>
+            <li><a href="/pays/usa.html">États-Unis (+1)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

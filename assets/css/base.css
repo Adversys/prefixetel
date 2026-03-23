@@ -1,0 +1,72 @@
+/* ========== BASE.CSS (clair premium, STABLE) ========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --text: #0f172a;
+  --text-soft: #475569;
+  --border: #e2e8f0;
+
+  /* Violet premium */
+  --violet: #7c3aed;
+  --violet-dark: #6d28d9;
+  --violet-light: #ede9fe;
+  --violet-gradient: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --transition: 0.25s ease;
+}
+
+/* TYPO & BODY */
+body {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  margin-top: 90px;
+}
+
+/* LIENS */
+a {
+  color: var(--violet);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--violet-dark);
+  text-decoration: underline;
+}
+
+/* CONTAINER — cohérent avec ton layout actuel */
+.container {
+  width: 100%;
+  max-width: 1300px; /* largeur idéale */
+  margin: 0 auto;
+  padding: 0 2rem; /* plus d’air sur les côtés */
+}
+
+/* TITRES */
+h1,
+h2,
+h3 {
+  color: var(--text);
+  font-weight: 700;
+}
+
+h2 {
+  margin-bottom: 30px;
+}

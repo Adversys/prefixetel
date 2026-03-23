@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Grèce — Indicatif +30 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇬🇷</span>
+            <div>
+              <h1>Grèce — Indicatif téléphonique +30</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler la Grèce depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Athens">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+30</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Athènes</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+2</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la Grèce depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro grec depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>30</strong> +
+                <strong>numéro local à 10 chiffres</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>21 1234 5678 → +30 21 1234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>30</strong>.</li>
+                <li>Terminez par le numéro grec (10 chiffres).</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 30 21 1234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+30</strong> puis le numéro.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+30 69 9876 5432</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Grèce</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>Numéros à <strong>10 chiffres</strong>.</li>
+                <li>Aucun 0 national à retirer.</li>
+                <li>Format national : <strong>AA XXXX XXXX</strong>.</li>
+                <li>
+                  Format international : <strong>+30 AA XXXX XXXX</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs géographiques</h3>
+              <ul class="country-list">
+                <li><strong>21</strong> : Athènes</li>
+                <li><strong>231</strong> : Thessalonique</li>
+                <li><strong>241</strong> : Larissa</li>
+                <li><strong>281</strong> : Héraklion (Crète)</li>
+                <li><strong>261</strong> : Patras</li>
+                <li><strong>69</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>100</strong> : police</li>
+                <li><strong>166</strong> : ambulance</li>
+                <li><strong>199</strong> : pompiers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la Grèce</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro grec : <code>21 1234 5678</code></p>
+              <p>À composer : <code>00 30 21 1234 5678</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro grec : <code>231 987 6543</code></p>
+              <p>À composer : <code>00 30 231 987 6543</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro grec : <code>69 4567 8901</code></p>
+              <p>À composer : <code>00 30 69 4567 8901</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la Grèce</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la Grèce</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 30 21 1234 5678</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 30 231 987 6543</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 30 69 4567 8901</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 30 281 234 5678</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la Grèce avec l’indicatif +30</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de la Grèce est-il +30 ?</h3>
+              <p>
+                L’indicatif +30 est attribué à la Grèce par l’UIT dans le cadre
+                du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Y a‑t‑il un 0 à retirer ?</h3>
+              <p>Non. Les numéros grecs ne commencent jamais par 0.</p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro grec ?</h3>
+              <p>
+                Il commence par <strong>+30</strong> suivi d’un numéro à 10
+                chiffres.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il en Grèce ?</h3>
+              <p>Oui, le 112 est le numéro d’urgence national.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/chypre.html">Chypre (+357)</a></li>
+            <li><a href="/pays/bulgarie.html">Bulgarie (+359)</a></li>
+            <li><a href="/pays/albanie.html">Albanie (+355)</a></li>
+            <li><a href="/pays/turquie.html">Turquie (+90)</a></li>
+            <li><a href="/pays/macedoine.html">Macédoine du Nord (+389)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

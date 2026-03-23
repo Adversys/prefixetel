@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Roumanie — Indicatif +40 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇷🇴</span>
+            <div>
+              <h1>Roumanie — Indicatif téléphonique +40</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler la Roumanie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Bucharest">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+40</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Bucarest</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+2</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la Roumanie depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro roumain depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>40</strong> +
+                <strong>numéro sans le 0 national</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>021 234 5678 → +40 21 234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>40</strong>.</li>
+                <li>Retirez le <strong>0</strong> national.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 40 21 234 5678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+40</strong> puis le numéro sans le 0.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+40 723 456 789</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Roumanie</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Numéros à <strong>9 chiffres</strong> (hors indicatif
+                  international).
+                </li>
+                <li>Format national : <strong>0AA XXX XXXX</strong>.</li>
+                <li>
+                  Format international : <strong>+40 AA XXX XXXX</strong>.
+                </li>
+                <li>Le 0 national disparaît à l’international.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs géographiques</h3>
+              <ul class="country-list">
+                <li><strong>21 / 31</strong> : Bucarest</li>
+                <li><strong>241</strong> : Constanța</li>
+                <li><strong>251</strong> : Craiova</li>
+                <li><strong>261</strong> : Baia Mare</li>
+                <li><strong>269</strong> : Sibiu</li>
+                <li><strong>7XX</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>955</strong> : ambulance</li>
+                <li><strong>981</strong> : police</li>
+                <li><strong>981</strong> : pompiers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la Roumanie</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro roumain : <code>021 234 5678</code></p>
+              <p>À composer : <code>00 40 21 234 5678</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro roumain : <code>723 456 789</code></p>
+              <p>À composer : <code>00 40 723 456 789</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro roumain : <code>241 345 678</code></p>
+              <p>À composer : <code>00 40 241 345 678</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la Roumanie</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la Roumanie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 40 21 234 5678</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 40 723 456 789</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 40 241 345 678</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 40 269 234 567</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la Roumanie avec l’indicatif +40</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de la Roumanie est-il +40 ?</h3>
+              <p>
+                L’indicatif +40 est attribué à la Roumanie par l’UIT dans le
+                cadre du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 national ?</h3>
+              <p>
+                Oui. Le 0 utilisé dans le format national ne doit pas être
+                composé depuis l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro roumain ?</h3>
+              <p>
+                Il commence par <strong>+40</strong> suivi d’un numéro à 9
+                chiffres.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il en Roumanie ?</h3>
+              <p>Oui, le 112 est le numéro d’urgence national.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/hongrie.html">Hongrie (+36)</a></li>
+            <li><a href="/pays/bulgarie.html">Bulgarie (+359)</a></li>
+            <li><a href="/pays/serbie.html">Serbie (+381)</a></li>
+            <li><a href="/pays/moldavie.html">Moldavie (+373)</a></li>
+            <li><a href="/pays/ukraine.html">Ukraine (+380)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

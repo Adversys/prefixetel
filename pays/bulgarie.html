@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Bulgarie — Indicatif +359 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇧🇬</span>
+            <div>
+              <h1>Bulgarie — Indicatif téléphonique +359</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler la Bulgarie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Sofia">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+359</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Sofia</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+2</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la Bulgarie depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro bulgare depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>359</strong> +
+                <strong>indicatif local</strong> +
+                <strong>numéro</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>(2) 123 4567 → +359 2 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>359</strong>.</li>
+                <li>
+                  Ajoutez l’indicatif local (ex : <strong>2</strong> pour
+                  Sofia).
+                </li>
+                <li>Terminez par le numéro.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 359 2 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+359</strong> puis l’indicatif.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+359 88 987 6543</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Bulgarie</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Numéros à 8 ou 9 chiffres (hors indicatif international).
+                </li>
+                <li>
+                  Format national : <strong>0A XXX XXXX</strong> ou
+                  <strong>0AA XXX XXX</strong>.
+                </li>
+                <li>
+                  Format international : <strong>+359 A XXX XXXX</strong>.
+                </li>
+                <li>Le 0 national disparaît à l’international.</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs locaux</h3>
+              <ul class="country-list">
+                <li><strong>2</strong> : Sofia</li>
+                <li><strong>32</strong> : Plovdiv</li>
+                <li><strong>52</strong> : Varna</li>
+                <li><strong>56</strong> : Bourgas</li>
+                <li><strong>42</strong> : Stara Zagora</li>
+                <li><strong>87 / 88 / 89</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>150</strong> : ambulance</li>
+                <li><strong>160</strong> : pompiers</li>
+                <li><strong>166</strong> : police</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la Bulgarie</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro bulgare : <code>(2) 123 4567</code></p>
+              <p>À composer : <code>00 359 2 123 4567</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro bulgare : <code>(52) 987 654</code></p>
+              <p>À composer : <code>00 359 52 987 654</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro bulgare : <code>(88) 456 7890</code></p>
+              <p>À composer : <code>00 359 88 456 7890</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la Bulgarie</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la Bulgarie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 359 2 123 4567</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 359 52 987 654</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 359 88 456 7890</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 359 32 234 567</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la Bulgarie avec l’indicatif +359</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de la Bulgarie est-il +359 ?</h3>
+              <p>
+                L’indicatif +359 a été attribué à la Bulgarie par l’UIT après la
+                réorganisation du plan mondial de numérotation.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 national ?</h3>
+              <p>
+                Oui. Le 0 utilisé dans le format national ne doit pas être
+                composé depuis l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro bulgare ?</h3>
+              <p>
+                Il commence par <strong>+359</strong> suivi d’un indicatif local
+                ou mobile.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il en Bulgarie ?</h3>
+              <p>Oui, le 112 est opérationnel dans tout le pays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/roumanie.html">Roumanie (+40)</a></li>
+            <li><a href="/pays/grece.html">Grèce (+30)</a></li>
+            <li><a href="/pays/serbie.html">Serbie (+381)</a></li>
+            <li><a href="/pays/turquie.html">Turquie (+90)</a></li>
+            <li><a href="/pays/macedoine.html">Macédoine du Nord (+389)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

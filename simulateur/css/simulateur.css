@@ -1,0 +1,156 @@
+/* ============================
+   SIMULATEUR — VERSION WHAOU
+   ============================ */
+
+/* Container global */
+.simulator-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 2rem;
+}
+
+/* Titre */
+.simulator-container h1 {
+  margin-bottom: 25px;
+  margin-top: 150px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+/* Bloc principal */
+.simulator-box {
+  background: linear-gradient(135deg, #ffffff, #faf5ff);
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #e8d9ff;
+  box-shadow: 0 10px 35px rgba(123, 47, 247, 0.15);
+  backdrop-filter: blur(4px);
+  transition: 0.3s;
+  margin-bottom: 200px;
+}
+
+.simulator-box:hover {
+  box-shadow: 0 15px 45px rgba(123, 47, 247, 0.25);
+}
+
+/* Labels */
+.simulator-box label {
+  font-weight: 700;
+  margin-top: 20px;
+  display: block;
+  color: #5a2bbf;
+  font-size: 1.05rem;
+}
+
+/* Inputs & selects */
+.simulator-box select,
+.simulator-box input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  border: 2px solid #e3ccff;
+  border-radius: 10px;
+  margin-top: 8px;
+  background: #ffffff;
+  transition: 0.25s;
+}
+
+.simulator-box select:focus,
+.simulator-box input:focus {
+  border-color: #a45bff;
+  box-shadow: 0 0 0 4px rgba(164, 91, 255, 0.25);
+}
+
+/* Résultat */
+.result-card {
+  margin-top: 35px;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f9f0ff);
+  border-radius: 16px;
+  border: 1px solid #e8d9ff;
+  box-shadow: 0 8px 30px rgba(123, 47, 247, 0.12);
+  animation: fadeIn 0.4s ease-out;
+}
+
+.result-card.hidden {
+  display: none;
+}
+
+/* Phrase dynamique */
+.result-card .context {
+  font-size: 1.2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  color: #7b2ff7;
+}
+
+/* Lignes de résultat */
+.result-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e8d9ff;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+.result-line:hover {
+  background: #f7eaff;
+  border-color: #d6b3ff;
+}
+
+.result-line .label {
+  font-weight: 600;
+  color: #6a4fbf;
+}
+
+/* Bouton copier */
+.copy {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.copy:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(241, 7, 163, 0.4);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .result-line {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .copy {
+    align-self: flex-end;
+  }
+}

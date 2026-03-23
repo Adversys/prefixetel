@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+    <title>Canada — Indicatif +1 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇨🇦</span>
+            <div>
+              <h1>Canada — Indicatif téléphonique +1</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler le Canada depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="America/Toronto">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+1</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Amérique du Nord</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Ottawa</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC‑3.5 à UTC‑8</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler le Canada depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro canadien depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>1</strong> +
+                <strong>indicatif régional</strong> +
+                <strong>numéro à 7 chiffres</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>(514) 123‑4567 → +1 514 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>1</strong>.</li>
+                <li>
+                  Ajoutez l’indicatif régional (ex : <strong>514</strong>).
+                </li>
+                <li>Terminez par le numéro à 7 chiffres.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 1 514 123 4567</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+1</strong> puis l’indicatif régional.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+1 604 987 6543</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone au Canada</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>Format nord‑américain (NANP).</li>
+                <li>Format national : <strong>(AAA) XXX‑XXXX</strong>.</li>
+                <li>
+                  Format international : <strong>+1 AAA XXX XXXX</strong>.
+                </li>
+                <li>Aucun 0 à retirer (contrairement à l’Europe).</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs régionaux</h3>
+              <ul class="country-list">
+                <li><strong>514 / 438</strong> : Montréal</li>
+                <li><strong>418 / 581</strong> : Québec</li>
+                <li><strong>450 / 579</strong> : Couronne de Montréal</li>
+                <li><strong>416 / 647 / 437</strong> : Toronto</li>
+                <li><strong>604 / 778 / 236</strong> : Vancouver</li>
+                <li><strong>902</strong> : Nouvelle‑Écosse</li>
+                <li><strong>403 / 587</strong> : Calgary</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li>
+                  <strong>800 / 888 / 877 / 866 / 855 / 844 / 833</strong> :
+                  numéros gratuits
+                </li>
+                <li><strong>900</strong> : numéros surtaxés</li>
+                <li><strong>911</strong> : urgences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers le Canada</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro canadien : <code>(514) 123‑4567</code></p>
+              <p>À composer : <code>00 1 514 123 4567</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro canadien : <code>(604) 987‑6543</code></p>
+              <p>À composer : <code>00 1 604 987 6543</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro canadien : <code>(416) 234‑5678</code></p>
+              <p>À composer : <code>00 1 416 234 5678</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler le Canada</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers le Canada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 1 514 123 4567</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 1 604 987 6543</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 1 416 234 5678</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 1 418 765 4321</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler le Canada avec l’indicatif +1</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif du Canada est-il +1 ?</h3>
+              <p>
+                Le Canada fait partie du plan de numérotation nord‑américain
+                (NANP), partagé avec les États‑Unis et plusieurs territoires.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 comme en Europe ?</h3>
+              <p>
+                Non. Les numéros canadiens ne commencent jamais par 0, donc rien
+                à retirer.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro canadien ?</h3>
+              <p>
+                Il commence par <strong>+1</strong> suivi d’un indicatif
+                régional à 3 chiffres.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Les numéros 800 sont-ils gratuits ?</h3>
+              <p>
+                Oui, tous les numéros commençant par 800, 888, 877, 866, 855,
+                844 et 833 sont gratuits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/usa.html">États‑Unis (+1)</a></li>
+            <li><a href="/pays/france.html">France (+33)</a></li>
+            <li><a href="/pays/belgique.html">Belgique (+32)</a></li>
+            <li><a href="/pays/suisse.html">Suisse (+41)</a></li>
+            <li><a href="/pays/mexique.html">Mexique (+52)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("./partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+    <title>À propos | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main about-layout">
+      <!-- HERO -->
+      <section class="about-hero">
+        <div class="container">
+          <h1>À propos de prefixeTel</h1>
+          <p class="about-subtitle">
+            Le site de référence pour comprendre, identifier et utiliser les
+            indicatifs téléphoniques internationaux.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : MISSION -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Notre mission</h2>
+          <p>
+            prefixeTel a été créé avec un objectif simple : rendre l’information
+            téléphonique internationale accessible, claire et fiable. Que vous
+            cherchiez à appeler un proche à l’étranger, identifier un numéro
+            inconnu, comprendre un préfixe ou éviter les arnaques téléphoniques,
+            notre plateforme vous fournit des données précises et constamment
+            mises à jour.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : CE QUE NOUS PROPOSONS -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Ce que nous proposons</h2>
+
+          <div class="about-grid">
+            <div class="about-block">
+              <h3>📞 Indicatifs internationaux</h3>
+              <p>
+                Une base complète des indicatifs téléphoniques de tous les pays
+                du monde, avec des exemples concrets et des explications
+                claires.
+              </p>
+            </div>
+
+            <div class="about-block">
+              <h3>🌍 Pages pays détaillées</h3>
+              <p>
+                Chaque pays dispose d’une fiche complète : format des numéros,
+                préfixes régionaux, exemples, règles d’appel, FAQ, et
+                informations pratiques.
+              </p>
+            </div>
+
+            <div class="about-block">
+              <h3>🛡️ Astuces & sécurité</h3>
+              <p>
+                Des guides pour bloquer un numéro, éviter les arnaques,
+                comprendre les nouvelles lois sur le démarchage, et protéger
+                votre ligne fixe ou mobile.
+              </p>
+            </div>
+
+            <div class="about-block">
+              <h3>🔎 Outils pratiques</h3>
+              <p>
+                Recherche d’indicatif, identification rapide, préfixes mobiles,
+                numéros spéciaux, et informations utiles pour les particuliers
+                comme les professionnels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION : QUALITÉ DES DONNÉES -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Qualité et fiabilité des données</h2>
+          <p>
+            Toutes les informations publiées sur prefixeTel sont vérifiées à
+            partir de sources officielles :
+          </p>
+
+          <ul class="about-list">
+            <li>Organisations internationales de télécommunications</li>
+            <li>Régulateurs nationaux (ARCEP, FCC, etc.)</li>
+            <li>Opérateurs téléphoniques</li>
+            <li>Textes législatifs et réglementaires</li>
+          </ul>
+
+          <p>
+            Nous mettons régulièrement à jour les indicatifs, les préfixes, les
+            règles d’appel et les informations légales afin de garantir une
+            fiabilité maximale.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : POURQUOI CE SITE -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Pourquoi ce site existe</h2>
+          <p>
+            Les informations téléphoniques sont souvent dispersées, obsolètes ou
+            difficiles à comprendre. prefixeTel centralise tout au même endroit,
+            avec une présentation claire, moderne et accessible.
+          </p>
+          <p>
+            Notre objectif est de devenir la référence francophone sur les
+            indicatifs téléphoniques, en proposant un contenu plus complet, plus
+            fiable et plus agréable à consulter que les sites existants.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : CONTACT -->
+      <section class="about-section">
+        <div class="container">
+          <h2>Nous contacter</h2>
+          <p>
+            Une question, une suggestion, une correction ? Vous pouvez nous
+            écrire à :
+          </p>
+          <p class="about-contact">
+            <strong>contact@prefixetel.fr</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

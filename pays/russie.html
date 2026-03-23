@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Russie — Indicatif +7 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main country-layout">
+      <!-- HERO -->
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇷🇺</span>
+            <div>
+              <h1>Russie — Indicatif téléphonique +7</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler la Russie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <!-- META -->
+          <div class="country-hero-meta" data-timezone="Europe/Moscow">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+7</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Europe / Asie</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Moscou</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseau horaire</span>
+              <span class="meta-value">UTC+3 (Moscou)</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT APPELER -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler la Russie depuis l’étranger</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro russe depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>7</strong> +
+                <strong>indicatif régional</strong> +
+                <strong>numéro local</strong>
+              </p>
+              <p>
+                Exemple :<br />
+                <code>(495) 123‑45‑67 → +7 495 123 45 67</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>7</strong>.</li>
+                <li>
+                  Ajoutez l’indicatif régional (ex : <strong>495</strong> pour
+                  Moscou).
+                </li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 7 495 123 45 67</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+7</strong> puis l’indicatif.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+7 921 987 65 43</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRUCTURE NUMÉROS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros de téléphone en Russie</h2>
+
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Numéros à <strong>10 chiffres</strong> (hors indicatif
+                  international).
+                </li>
+                <li>Format national : <strong>8 AAA XXX XX XX</strong>.</li>
+                <li>
+                  Format international : <strong>+7 AAA XXX XX XX</strong>.
+                </li>
+                <li>
+                  Le <strong>8</strong> national disparaît à l’international.
+                </li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Principaux indicatifs régionaux</h3>
+              <ul class="country-list">
+                <li><strong>495 / 499</strong> : Moscou</li>
+                <li><strong>812</strong> : Saint‑Pétersbourg</li>
+                <li><strong>383</strong> : Novossibirsk</li>
+                <li><strong>343</strong> : Ekaterinbourg</li>
+                <li><strong>861</strong> : Krasnodar</li>
+                <li><strong>9XX</strong> : mobiles</li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>112</strong> : urgences</li>
+                <li><strong>101</strong> : pompiers</li>
+                <li><strong>102</strong> : police</li>
+                <li><strong>103</strong> : ambulance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXEMPLES -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers la Russie</h2>
+
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro russe : <code>(495) 123 45 67</code></p>
+              <p>À composer : <code>00 7 495 123 45 67</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Numéro russe : <code>921 987 65 43</code></p>
+              <p>À composer : <code>00 7 921 987 65 43</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Numéro russe : <code>(812) 345 67 89</code></p>
+              <p>À composer : <code>00 7 812 345 67 89</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TABLE PREFIXES INTERNATIONAUX -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Préfixes internationaux pour appeler la Russie</h2>
+
+          <table class="country-table">
+            <thead>
+              <tr>
+                <th>Pays</th>
+                <th>Préfixe international</th>
+                <th>Exemple vers la Russie</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>France</td>
+                <td>00</td>
+                <td><code>00 7 495 123 45 67</code></td>
+              </tr>
+              <tr>
+                <td>Belgique</td>
+                <td>00</td>
+                <td><code>00 7 921 987 65 43</code></td>
+              </tr>
+              <tr>
+                <td>Maroc</td>
+                <td>00</td>
+                <td><code>00 7 812 345 67 89</code></td>
+              </tr>
+              <tr>
+                <td>Suisse</td>
+                <td>00</td>
+                <td><code>00 7 343 234 56 78</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="country-section">
+        <div class="container">
+          <h2>FAQ — Appeler la Russie avec l’indicatif +7</h2>
+
+          <div class="country-faq">
+            <div class="country-faq-item">
+              <h3>Pourquoi l’indicatif de la Russie est-il +7 ?</h3>
+              <p>
+                L’indicatif +7 était historiquement celui de l’URSS. Après sa
+                dissolution, la Russie a conservé cet indicatif.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Faut‑il enlever un 0 national ?</h3>
+              <p>
+                Oui. Le 8 utilisé dans le format national ne doit pas être
+                composé depuis l’étranger.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Comment reconnaître un numéro russe ?</h3>
+              <p>
+                Il commence par <strong>+7</strong> suivi d’un indicatif
+                régional ou mobile.
+              </p>
+            </div>
+
+            <div class="country-faq-item">
+              <h3>Le 112 fonctionne-t-il en Russie ?</h3>
+              <p>Oui, le 112 est le numéro d’urgence national.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTRES PAYS -->
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles</h2>
+
+          <ul class="country-links">
+            <li><a href="/pays/kazakhstan.html">Kazakhstan (+7)</a></li>
+            <li><a href="/pays/ukraine.html">Ukraine (+380)</a></li>
+            <li><a href="/pays/bielorussie.html">Biélorussie (+375)</a></li>
+            <li><a href="/pays/georgie.html">Géorgie (+995)</a></li>
+            <li><a href="/pays/lettonie.html">Lettonie (+371)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

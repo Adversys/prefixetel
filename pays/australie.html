@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("../partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Australie — Indicatif +61 | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+    <main class="site-main country-layout">
+      <section class="country-hero">
+        <div class="container">
+          <div class="country-hero-top">
+            <span class="country-flag">🇦🇺</span>
+            <div>
+              <h1>Australie — Indicatif téléphonique +61</h1>
+              <p class="country-hero-subtitle">
+                Tout ce qu’il faut savoir pour appeler l’Australie depuis
+                l’étranger.
+              </p>
+            </div>
+          </div>
+
+          <div class="country-hero-meta" data-timezone="Australia/Sydney">
+            <div>
+              <span class="meta-label">Indicatif international</span>
+              <span class="meta-value">+61</span>
+            </div>
+            <div>
+              <span class="meta-label">Continent</span>
+              <span class="meta-value">Océanie</span>
+            </div>
+            <div>
+              <span class="meta-label">Capitale</span>
+              <span class="meta-value">Canberra</span>
+            </div>
+            <div>
+              <span class="meta-label">Fuseaux horaires</span>
+              <span class="meta-value">UTC+8 à UTC+11</span>
+            </div>
+            <div>
+              <span class="meta-label">Heure locale (Sydney)</span>
+              <span class="meta-value" id="local-time">--:--</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="country-section">
+        <div class="container">
+          <h2>Comment appeler l’Australie depuis l’étranger</h2>
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Format général</h3>
+              <p>Pour appeler un numéro australien depuis l’étranger :</p>
+              <p class="country-highlight">
+                <strong>Préfixe international</strong> + <strong>61</strong> +
+                <strong>indicatif régional</strong> +
+                <strong>numéro local</strong>
+              </p>
+              <p>
+                Exemple fixe (Sydney) :<br />
+                <code>(02) 9012 3456 → +61 2 9012 3456</code>
+              </p>
+              <p>
+                Exemple mobile :<br />
+                <code>04 12 345 678 → +61 4 12 345 678</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un téléphone fixe</h3>
+              <ul class="country-list">
+                <li>
+                  Composez le préfixe international (ex : <strong>00</strong> en
+                  Europe).
+                </li>
+                <li>Ajoutez <strong>61</strong>.</li>
+                <li>
+                  Retirez le <strong>0</strong> initial de l’indicatif régional.
+                </li>
+                <li>Ajoutez le reste du numéro.</li>
+              </ul>
+              <p>
+                Exemple depuis la France :<br />
+                <code>00 61 2 9012 3456</code>
+              </p>
+            </div>
+
+            <div class="country-block">
+              <h3>Depuis un mobile</h3>
+              <ul class="country-list">
+                <li>Utilisez le signe <strong>+</strong>.</li>
+                <li>Tapez <strong>+61</strong>.</li>
+                <li>Retirez le <strong>0</strong> initial.</li>
+              </ul>
+              <p>
+                Exemple :<br />
+                <code>+61 4 12 345 678</code>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="country-section">
+        <div class="container">
+          <h2>Structure des numéros en Australie</h2>
+          <div class="country-grid">
+            <div class="country-block">
+              <h3>Longueur et format</h3>
+              <ul class="country-list">
+                <li>
+                  Fixes : <strong>10 chiffres</strong> (0 + indicatif régional +
+                  8 chiffres).
+                </li>
+                <li>
+                  Mobiles : <strong>10 chiffres</strong> (commencent par
+                  <strong>04</strong>).
+                </li>
+                <li>
+                  Format international fixe : <strong>+61 X XXXX XXXX</strong>.
+                </li>
+                <li>
+                  Format international mobile :
+                  <strong>+61 4 XX XXX XXX</strong>.
+                </li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Indicatifs régionaux</h3>
+              <ul class="country-list">
+                <li><strong>02</strong> : Nouvelle‑Galles du Sud, ACT</li>
+                <li><strong>03</strong> : Victoria, Tasmanie</li>
+                <li><strong>07</strong> : Queensland</li>
+                <li>
+                  <strong>08</strong> : Australie‑Occidentale,
+                  Australie‑Méridionale, NT
+                </li>
+              </ul>
+            </div>
+
+            <div class="country-block">
+              <h3>Numéros spéciaux</h3>
+              <ul class="country-list">
+                <li><strong>000</strong> : urgences</li>
+                <li><strong>112</strong> : urgences (mobile)</li>
+                <li>
+                  <strong>13 / 1300 / 1800</strong> : services spéciaux, numéros
+                  locaux, gratuits, etc.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="country-section">
+        <div class="container">
+          <h2>Exemples d’appels vers l’Australie</h2>
+          <div class="country-examples">
+            <div>
+              <h3>Depuis la France</h3>
+              <p>Numéro fixe (Sydney) : <code>(02) 9012 3456</code></p>
+              <p>À composer : <code>00 61 2 9012 3456</code></p>
+            </div>
+            <div>
+              <h3>Depuis la Belgique</h3>
+              <p>Mobile : <code>04 12 345 678</code></p>
+              <p>À composer : <code>00 61 4 12 345 678</code></p>
+            </div>
+            <div>
+              <h3>Depuis le Maroc</h3>
+              <p>Fixe (Melbourne) : <code>(03) 9123 4567</code></p>
+              <p>À composer : <code>00 61 3 9123 4567</code></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="country-section">
+        <div class="container">
+          <h2>Autres indicatifs utiles en Océanie</h2>
+          <ul class="country-links">
+            <li>
+              <a href="/pays/nouvelle-zelande.html">Nouvelle‑Zélande (+64)</a>
+            </li>
+            <li><a href="/pays/fidji.html">Fidji (+679)</a></li>
+            <li>
+              <a href="/pays/papouasie-nouvelle-guinee.html"
+                >Papouasie‑Nouvelle‑Guinée (+675)</a
+              >
+            </li>
+            <li><a href="/pays/vanuatu.html">Vanuatu (+678)</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

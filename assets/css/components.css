@@ -1,0 +1,250 @@
+/* ========== COMPONENTS.CSS ========== */
+
+/* BOUTONS */
+button {
+  background: var(--violet-gradient);
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  width: 200px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background: var(--violet-dark);
+}
+
+/* INPUTS */
+input {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: 0.8rem 1rem;
+  border-radius: var(--radius);
+  color: var(--text);
+  width: 500px;
+  margin-top: 20px;
+}
+.search-form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* PILLS (pays populaires) */
+.pill {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  background: var(--violet-light);
+  border: 1px solid #ddd6fe;
+  color: var(--violet);
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+.popular-grid {
+  text-align: center;
+}
+
+.pill:hover {
+  background: #e9e5ff;
+  border-color: var(--violet);
+}
+
+/* TABLEAU PREMIUM ++ */
+.table-wrapper {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+/* Largeur équilibrée */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Colonnes équilibrées */
+td:nth-child(1),
+th:nth-child(1) {
+  padding-left: 2rem;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  text-align: center;
+}
+
+td:nth-child(3),
+th:nth-child(3) {
+  padding-right: 2rem;
+}
+
+/* Header premium */
+th {
+  background: var(--bg-soft);
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Lignes */
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  word-wrap: break-word;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Zébrage premium */
+tr:nth-child(even) td {
+  background: #f5f5f7;
+}
+
+/* Hover premium */
+tr:hover td {
+  background: var(--violet-light);
+  transition: var(--transition);
+}
+
+/* Dernière ligne sans bordure */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/*CSS RECHERCHE DYNAMIQUE */
+.search-results {
+  display: none;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-top: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+
+.result-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-item:hover {
+  background: #f5f5f5;
+}
+
+.result-item .flag {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.result-item .name {
+  flex: 1;
+}
+
+.result-item .code {
+  opacity: 0.6;
+}
+
+/* REPORT BUG */
+
+.report-link {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.report-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ========== REPORT BUG PAGE (VERSION PREMIUM) ========== */
+
+.bug-container {
+  max-width: 700px;
+  margin: 140px auto 80px;
+  padding: 0 20px;
+}
+
+.bug-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.bug-subtitle {
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 45px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.bug-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Champs */
+.bug-field label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.bug-field input,
+.bug-field textarea {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius);
+  color: var(--text);
+  width: 100%;
+  font-size: 1rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  margin-top: 20px;
+}
+
+/* Focus premium */
+.bug-field input:focus,
+.bug-field textarea:focus {
+  border-color: var(--violet);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+  outline: none;
+}
+
+/* Bouton */
+.bug-submit {
+  width: 100%;
+  max-width: 260px;
+  margin: 40px auto 0;
+}
+
+/* Message succès */
+.bug-success {
+  display: none;
+  text-align: center;
+  color: #0a8a0a;
+  margin-top: 15px;
+  font-weight: 600;
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <script>
+      fetch("./partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="/assets/img/fav.png"
+    />
+    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+
+    <title>Astuces téléphoniques | prefixeTel</title>
+  </head>
+
+  <body>
+    <div id="header-placeholder"></div>
+
+    <main class="site-main tips-layout">
+      <!-- HERO -->
+      <section class="tips-hero">
+        <div class="container">
+          <h1>Astuces téléphoniques (France)</h1>
+          <p class="tips-subtitle">
+            Codes utiles, blocage d’appels, masquage de numéro, filtrage,
+            services gratuits… Toutes les astuces pour maîtriser votre ligne
+            fixe ou mobile.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : BLOQUER UN NUMÉRO FIXE -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Bloquer un numéro de téléphone fixe</h2>
+
+          <p>
+            Vous êtes harcelé par un numéro fixe (démarchage, spam, appels
+            répétés) ? Voici comment bloquer un numéro selon votre opérateur.
+          </p>
+
+          <h3>Chez Free</h3>
+          <ul class="tips-list">
+            <li>
+              Activer le filtrage des appels entrants : <code>*351#</code>
+            </li>
+            <li>Désactiver : <code>#35#</code></li>
+            <li>Bloquer un numéro : <code>*351*numéro#</code></li>
+          </ul>
+
+          <p>Exemple pour bloquer <strong>0171025803</strong> :</p>
+          <code>*351*0171025803#</code>
+
+          <h3>Autres opérateurs (Orange, SFR, Bouygues)</h3>
+          <p>
+            Sur les lignes fixes de ces opérateurs, il n’est pas possible de
+            bloquer un numéro spécifique.
+          </p>
+
+          <h4>Exception SFR</h4>
+          <p>Vous pouvez bloquer les appels masqués :</p>
+          <ul class="tips-list">
+            <li>Activer : <code>*82#</code></li>
+            <li>Désactiver : <code>#82#</code></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION : BLOCTEL -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Bloquer les démarchages téléphoniques avec Bloctel</h2>
+
+          <p>
+            Bloctel est un service gouvernemental permettant de ne plus recevoir
+            d’appels commerciaux. Les entreprises de prospection doivent
+            obligatoirement retirer de leurs listes les numéros inscrits.
+          </p>
+
+          <p>
+            Inscription :
+            <a href="https://www.bloctel.gouv.fr" target="_blank"
+              >bloctel.gouv.fr</a
+            >
+          </p>
+
+          <p>
+            Après inscription, vous recevez un numéro de compte permettant de
+            déposer une réclamation si vous recevez encore des appels
+            commerciaux.
+          </p>
+
+          <h3>Sanctions</h3>
+          <p>
+            Les entreprises qui ne respectent pas Bloctel encourent jusqu’à
+            <strong>2 ans de prison</strong> et
+            <strong>150 000 € d’amende</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : NOUVELLE LÉGISLATION -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Législation 2023 sur le démarchage téléphonique</h2>
+
+          <h3>Préfixes autorisés pour les démarcheurs</h3>
+          <p>
+            Depuis 2023, les démarcheurs ne peuvent plus appeler depuis un
+            numéro en 06 ou 07.
+          </p>
+
+          <div class="tips-prefix-grid">
+            <code>0162</code><code>0163</code><code>0270</code><code>0271</code>
+            <code>0377</code><code>0378</code><code>0424</code><code>0425</code>
+            <code>0568</code><code>0569</code><code>0948</code><code>0949</code>
+          </div>
+
+          <h3>Plages horaires autorisées</h3>
+          <ul class="tips-list">
+            <li>10h – 13h</li>
+            <li>14h – 20h</li>
+          </ul>
+
+          <p>
+            Aucun appel commercial autorisé le samedi, dimanche et jours fériés.
+          </p>
+
+          <h3>Signaler un SMS frauduleux</h3>
+          <p>
+            Transférez le SMS au <strong>33700</strong> (service anti‑spam
+            officiel).
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION : MASQUER SON NUMÉRO -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Masquer son numéro de téléphone</h2>
+
+          <h3>Depuis une ligne fixe</h3>
+          <ul class="tips-list">
+            <li>Free : <code>*31*</code> (désactiver : <code>#31#</code>)</li>
+            <li>Orange : <code>3651</code></li>
+            <li>Bouygues : <code>*1651</code></li>
+            <li>SFR : <code>3651</code></li>
+            <li>Numéricable : <code>*31#</code></li>
+          </ul>
+
+          <h3>Depuis un mobile</h3>
+          <p>Code universel : <code>#31#</code></p>
+        </div>
+      </section>
+
+      <!-- SECTION : BLOQUER / FILTRER APPELS SORTANTS -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Bloquer ou filtrer les appels sortants</h2>
+
+          <h3>Bloquer tous les appels sortants</h3>
+          <ul class="tips-list">
+            <li>Activer : <code>*33*0000#</code></li>
+            <li>Désactiver : <code>#33*0000#</code></li>
+          </ul>
+
+          <h3>Filtrer certains numéros sortants</h3>
+          <ul class="tips-list">
+            <li>Activer : <code>*341*0000#</code></li>
+            <li>Ajouter un numéro : <code>*341*0000*numéro#</code></li>
+            <li>Supprimer la liste : <code>#341*0000#</code></li>
+            <li>Désactiver : <code>#34*0000#</code></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION : SERVICES GRATUITS -->
+      <section class="tips-section">
+        <div class="container">
+          <h2>Autres services téléphoniques gratuits</h2>
+
+          <ul class="tips-list">
+            <li>Accès messagerie : <code>**1</code></li>
+            <li>Dernier appelant non répondu : <code>3131</code></li>
+            <li>
+              Avertissement d’appel en instance : <code>*43#</code> (désactiver
+              : <code>#43#</code>)
+            </li>
+            <li>
+              Transfert d’appel : <code>*21*numéro#</code> (désactiver :
+              <code>#21#</code>)
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

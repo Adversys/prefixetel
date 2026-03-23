@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Charge les meta-tags globaux depuis ton partial -->
+    <script>
+      fetch("/partials/meta.html")
+        .then((r) => r.text())
+        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+    </script>
+  </head>
+
+  <body>
+    <!-- Header chargé dynamiquement -->
+    <div id="header-placeholder"></div>
+
+    <main class="site-main">
+      <!-- SECTION HERO -->
+      <section class="hero">
+        <div class="container">
+          <h1>Trouvez l’indicatif téléphonique d’un pays</h1>
+          <p>Recherchez facilement l’indicatif international d’un pays.</p>
+
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Ex : France, +33, 0033..."
+              autocomplete="off"
+            />
+            <div id="search-results" class="search-results"></div>
+
+            <button type="submit">Identifier</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- SECTION PAYS POPULAIRES -->
+      <section class="popular">
+        <div class="container">
+          <h2>Pays les plus recherchés</h2>
+
+          <div class="popular-grid">
+            <a href="/pays/france.html" class="pill">France +33</a>
+            <a href="/pays/belgique.html" class="pill">Belgique +32</a>
+            <a href="/pays/suisse.html" class="pill">Suisse +41</a>
+            <a href="/pays/maroc.html" class="pill">Maroc +212</a>
+            <a href="/pays/algerie.html" class="pill">Algérie +213</a>
+            <a href="/pays/tunisie.html" class="pill">Tunisie +216</a>
+            <a href="/pays/canada.html" class="pill">Canada +1</a>
+            <a href="/pays/usa.html" class="pill">USA +1</a>
+            <a href="/pays/espagne.html" class="pill">Espagne +34</a>
+            <a href="/pays/italie.html" class="pill">Italie +39</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION TABLEAU -->
+      <section class="table-section">
+        <div class="container">
+          <h2>Liste des indicatifs téléphoniques internationaux</h2>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pays</th>
+                  <th>Indicatif</th>
+                  <th>Exemple</th>
+                </tr>
+              </thead>
+
+              <tbody id="indicatif-table-body">
+                <!-- Rempli automatiquement via data.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer chargé dynamiquement -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS global -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/data.js"></script>
+  </body>
+</html>
