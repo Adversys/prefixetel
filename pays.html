@@ -4,21 +4,21 @@
 
   <!-- 1) On applique le <base> AVANT TOUT -->
   <script>
-    if (location.hostname.includes("github.io")) {
+    const isGithub = location.hostname.includes("github.io");
+    if (isGithub) {
       document.write('<base href="/prefixetel/">');
     }
   </script>
 
-  <!-- 2) Charger meta.html -->
+  <!-- 2) On charge meta.html AVEC UN CHEMIN RELATIF -->
   <script>
     fetch("partials/meta.html")
-      .then(r => r.text())
-      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+      .then((r) => r.text())
+      .then((html) => document.head.insertAdjacentHTML("beforeend", html));
   </script>
 
   <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
   <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
-
   <title>Indicatifs téléphoniques par pays | prefixeTel</title>
 
   <!-- CSS RELATIFS (PAS DE / DEVANT) -->
@@ -55,11 +55,14 @@
     </section>
   </main>
 
-  <div id="footer-placeholder"></div>
+
 
   <!-- JS RELATIFS -->
   <script src="assets/js/pays.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- Footer chargé dynamiquement -->
+  <div id="footer-placeholder"></div>
 
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
