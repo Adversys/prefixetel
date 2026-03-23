@@ -2,7 +2,12 @@
 <html lang="fr">
 <head>
 
-
+  <!-- 1) On applique le <base> AVANT TOUT -->
+  <script>
+    if (location.hostname.includes("github.io")) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
 
   <!-- 2) Charger meta.html -->
   <script>
