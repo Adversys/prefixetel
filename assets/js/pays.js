@@ -4,7 +4,8 @@
 // ------------------------------------------------------------
 
 async function loadCountries() {
-  const res = await fetch("data/countries.json");
+  const root = location.hostname.includes("github.io") ? "/prefixetel" : "";
+  const res = await fetch(root + "/data/countries.json");
   const countries = await res.json();
 
   const container = document.getElementById("countries-container");
@@ -24,18 +25,16 @@ async function loadCountries() {
     const term = filter.toLowerCase();
 
     for (const continent in continents) {
-      // Filtrage
       const filtered = continents[continent].filter(
         (c) =>
           c.name.toLowerCase().includes(term) ||
           c.callingCode.toLowerCase().includes(term) ||
           c.iso2.toLowerCase().includes(term) ||
-          c.iso3.toLowerCase().includes(term),
+          c.iso3.toLowerCase().includes(term)
       );
 
       if (filtered.length === 0) continue;
 
-      // Bloc continent
       const block = document.createElement("div");
       block.className = "continent-block";
 
@@ -46,15 +45,12 @@ async function loadCountries() {
             .map(
               (c) => `
 <li>
-  <a href="/pays/${c.slug}.html">
+  <a href="pays/${c.slug}.html">
     <span class="status-dot ${c.hasPage ? "ok" : "missing"}"></span>
     ${c.flag} ${c.name} (${c.callingCode})
   </a>
 </li>
-
-
-
-          `,
+          `
             )
             .join("")}
         </ul>
@@ -64,14 +60,11 @@ async function loadCountries() {
     }
   }
 
-  // Affichage initial
   renderList();
 
-  // Recherche instantanée
   searchInput.addEventListener("input", () => {
     renderList(searchInput.value);
   });
 }
 
-// Lancement automatique
 document.addEventListener("DOMContentLoaded", loadCountries);
