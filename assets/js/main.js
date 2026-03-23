@@ -1,10 +1,9 @@
 // ========== CHARGEMENT HEADER ==========
-fetch("/partials/header.html")
+fetch("partials/header.html")
   .then((r) => r.text())
   .then((html) => {
     document.getElementById("header-placeholder").innerHTML = html;
 
-    // Active le menu mobile une fois le header chargé
     const toggle = document.querySelector(".menu-toggle");
     const nav = document.querySelector(".main-nav");
 
@@ -16,12 +15,11 @@ fetch("/partials/header.html")
   });
 
 // ========== CHARGEMENT FOOTER ==========
-fetch("/partials/footer.html")
+fetch("partials/footer.html")
   .then((r) => r.text())
   .then((html) => {
     document.getElementById("footer-placeholder").innerHTML = html;
 
-    // Maintenant le footer existe → on peut mettre l'année
     const yearSpan = document.getElementById("year");
     if (yearSpan) {
       yearSpan.textContent = new Date().getFullYear();
@@ -49,23 +47,19 @@ function updateCountryLocalTime() {
   el.textContent = new Intl.DateTimeFormat("fr-FR", options).format(now);
 }
 
-// Mise à jour immédiate
 updateCountryLocalTime();
-
-// Mise à jour toutes les minutes
 setInterval(updateCountryLocalTime, 60000);
 
 // ========== CHARGEMENT UNIQUE DU JSON ==========
 let countries = [];
 
-// Charger Countries.json UNE SEULE FOIS
-const loadCountries = fetch("/data/Countries.json")
+const loadCountries = fetch("data/Countries.json")
   .then((r) => r.json())
   .then((data) => {
     countries = data.filter((c) => c.hasPage === true);
   });
 
-// ========== MOTEUR DE RECHERCHE CLASSIQUE (submit) ==========
+// ========== MOTEUR DE RECHERCHE CLASSIQUE ==========
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("search-form");
   const input = document.getElementById("search-input");
@@ -90,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       if (result) {
-        window.location.href = `/pays/${result.slug}.html`;
+        window.location.href = `pays/${result.slug}.html`;
       } else {
         alert("Aucun pays trouvé pour cette recherche.");
       }
@@ -98,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// ========== AUTOCOMPLETE DYNAMIQUE ==========
+// ========== AUTOCOMPLETE ==========
 document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("search-input");
   const resultsBox = document.getElementById("search-results");
@@ -122,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <span class="name">${item.name}</span>
               <span class="code">${item.callingCode}</span>
             </div>
-          `,
+          `
         )
         .join("");
     }
@@ -154,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!item) return;
 
       const slug = item.getAttribute("data-slug");
-      window.location.href = `/pays/${slug}.html`;
+      window.location.href = `pays/${slug}.html`;
     });
 
     input.addEventListener("keydown", (e) => {
@@ -162,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const first = resultsBox.querySelector(".result-item");
         if (first) {
           const slug = first.getAttribute("data-slug");
-          window.location.href = `/pays/${slug}.html`;
+          window.location.href = `pays/${slug}.html`;
         }
       }
     });
