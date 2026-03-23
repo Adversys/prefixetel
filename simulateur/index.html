@@ -12,9 +12,12 @@
 
   <!-- META GLOBAUX -->
   <script>
-    fetch("partials/meta.html")
-      .then(r => r.text())
-      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+    (function () {
+      const root = location.hostname.includes("github.io") ? "/prefixetel" : "";
+      fetch(root + "/partials/meta.html")
+        .then(r => r.text())
+        .then(html => document.head.insertAdjacentHTML("beforeend", html));
+    })();
   </script>
 
   <!-- FAVICONS -->
@@ -23,7 +26,7 @@
 
   <!-- SEO -->
   <title>Simulateur d’appel international | Convertir un numéro en format international (+XX)</title>
-  <meta name="description" content="Convertissez instantanément n’importe quel numéro en format international." />
+  <meta name="description" content="Convertissez instantanément n’importe quel numéro en format international. Simulateur d’appel international simple, rapide et précis : indicatifs, préfixes, formats +XX, appels depuis et vers tous les pays." />
 
   <!-- CSS -->
   <link rel="stylesheet" href="simulateur/css/simulateur.css" />
@@ -31,8 +34,18 @@
 
 <body>
 
-  <!-- HEADER (chargé par main.js) -->
-  <div id="header-placeholder"></div>
+  <!-- HEADER -->
+  <div id="header"></div>
+  <script>
+    (function () {
+      const root = location.hostname.includes("github.io") ? "/prefixetel" : "";
+      fetch(root + "/partials/header.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("header").innerHTML = html;
+        });
+    })();
+  </script>
 
   <main class="simulator-container">
     <h1>Simulateur d'appel international</h1>
@@ -65,11 +78,20 @@
     </div>
   </main>
 
-  <!-- FOOTER (chargé par main.js) -->
-  <div id="footer-placeholder"></div>
+  <!-- FOOTER -->
+  <div id="footer"></div>
+  <script>
+    (function () {
+      const root = location.hostname.includes("github.io") ? "/prefixetel" : "";
+      fetch(root + "/partials/footer.html")
+        .then(r => r.text())
+        .then(html => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    })();
+  </script>
 
-  <!-- JS -->
-  <script src="assets/js/main.js"></script>
+  <!-- JS SIMULATEUR -->
   <script src="simulateur/js/simulateur.js"></script>
 
 </body>
