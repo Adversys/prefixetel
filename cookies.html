@@ -1,126 +1,146 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cookies — PrefixeTel</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cookies — PrefixeTel</title>
 
-    <link rel="stylesheet" href="/assets/css/variables.css" />
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/components.css" />
-    <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/reglementations.css" />
-  </head>
+  <!-- BASE pour GitHub Pages -->
+  <script>
+    if (location.hostname.includes("github.io")) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
 
-  <body>
-    <div id="header-placeholder"></div>
+  <!-- META GLOBAUX -->
+  <script>
+    fetch("partials/meta.html")
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
 
-    <main class="legal-container">
-      <h1 class="legal-title">Cookies</h1>
+  <!-- CSS (RELATIFS) -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/reglementations.css" />
+</head>
 
-      <!-- SECTION 1 -->
-      <section class="legal-section">
-        <h2>1. Qu’est‑ce qu’un cookie&nbsp;?</h2>
-        <p>
-          Un cookie est un petit fichier enregistré sur votre appareil lors de
-          la visite d’un site web. Certains sont indispensables au
-          fonctionnement du site, d’autres servent à analyser l’audience ou à
-          afficher des publicités personnalisées.
-        </p>
-      </section>
+<body>
 
-      <!-- SECTION 2 -->
-      <section class="legal-section">
-        <h2>2. Cookies utilisés sur PrefixeTel</h2>
-        <p>
-          PrefixeTel peut utiliser les catégories de cookies suivantes&nbsp;:
-        </p>
+  <!-- HEADER (chargé par main.js) -->
+  <div id="header-placeholder"></div>
 
-        <ul>
-          <li>
-            <strong>Cookies strictement nécessaires</strong>
-            Indispensables au fonctionnement du site (sécurité, affichage,
-            navigation). Ils ne nécessitent pas de consentement.
-          </li>
+  <main class="legal-container">
+    <h1 class="legal-title">Cookies</h1>
 
-          <li>
-            <strong>Cookies de mesure d’audience</strong>
-            Utilisés pour comprendre la fréquentation du site et améliorer
-            l’expérience utilisateur.
-          </li>
+    <!-- SECTION 1 -->
+    <section class="legal-section">
+      <h2>1. Qu’est‑ce qu’un cookie&nbsp;?</h2>
+      <p>
+        Un cookie est un petit fichier enregistré sur votre appareil lors de
+        la visite d’un site web. Certains sont indispensables au
+        fonctionnement du site, d’autres servent à analyser l’audience ou à
+        afficher des publicités personnalisées.
+      </p>
+    </section>
 
-          <li>
-            <strong>Cookies publicitaires</strong>
-            Utilisés pour afficher des publicités, notamment via Google Ads /
-            AdSense, et mesurer leurs performances.
-          </li>
-        </ul>
+    <!-- SECTION 2 -->
+    <section class="legal-section">
+      <h2>2. Cookies utilisés sur PrefixeTel</h2>
+      <p>
+        PrefixeTel peut utiliser les catégories de cookies suivantes&nbsp;:
+      </p>
 
-        <p>
-          Les cookies de mesure d’audience et les cookies publicitaires ne sont
-          déposés qu’après votre <strong>consentement explicite</strong>,
-          recueilli via la plateforme de gestion du consentement (CMP).
-        </p>
-      </section>
+      <ul>
+        <li>
+          <strong>Cookies strictement nécessaires</strong>
+          Indispensables au fonctionnement du site (sécurité, affichage,
+          navigation). Ils ne nécessitent pas de consentement.
+        </li>
 
-      <!-- SECTION 3 -->
-      <section class="legal-section">
-        <h2>3. Partenaires publicitaires</h2>
-        <p>
-          Certains partenaires, comme Google, peuvent déposer des cookies afin
-          de diffuser des annonces et d’en mesurer l’efficacité.
-        </p>
-        <p>
-          Pour en savoir plus sur l’utilisation des données par Google&nbsp;:
-          <a
-            href="https://policies.google.com/technologies/ads"
-            target="_blank"
-            rel="noopener"
-          >
-            https://policies.google.com/technologies/ads
-          </a>
-        </p>
-      </section>
+        <li>
+          <strong>Cookies de mesure d’audience</strong>
+          Utilisés pour comprendre la fréquentation du site et améliorer
+          l’expérience utilisateur.
+        </li>
 
-      <!-- SECTION 4 -->
-      <section class="legal-section">
-        <h2>4. Gestion de votre consentement</h2>
-        <p>
-          Lors de votre première visite, un bandeau de consentement vous permet
-          d’accepter ou de refuser les cookies non essentiels.
-        </p>
-        <p>
-          Vous pouvez modifier vos choix à tout moment via le bouton
-          <strong>«&nbsp;Gérer mes cookies&nbsp;»</strong> présent sur le site.
-        </p>
-      </section>
+        <li>
+          <strong>Cookies publicitaires</strong>
+          Utilisés pour afficher des publicités, notamment via Google Ads /
+          AdSense, et mesurer leurs performances.
+        </li>
+      </ul>
 
-      <!-- SECTION 5 -->
-      <section class="legal-section">
-        <h2>5. Paramètres du navigateur</h2>
-        <p>
-          Vous pouvez également configurer votre navigateur pour bloquer ou
-          supprimer les cookies. Cela peut toutefois limiter certaines
-          fonctionnalités du site.
-        </p>
-      </section>
+      <p>
+        Les cookies de mesure d’audience et les cookies publicitaires ne sont
+        déposés qu’après votre <strong>consentement explicite</strong>,
+        recueilli via la plateforme de gestion du consentement (CMP).
+      </p>
+    </section>
 
-      <!-- SECTION 6 -->
-      <section class="legal-section">
-        <h2>6. Contact</h2>
-        <p>
-          Pour toute question concernant les cookies ou la confidentialité, vous
-          pouvez contacter&nbsp;:
-        </p>
-        <p>
-          <strong>[Ton nom / Ta société]</strong><br />
-          Email&nbsp;: <strong>[Ton email]</strong>
-        </p>
-      </section>
-    </main>
+    <!-- SECTION 3 -->
+    <section class="legal-section">
+      <h2>3. Partenaires publicitaires</h2>
+      <p>
+        Certains partenaires, comme Google, peuvent déposer des cookies afin
+        de diffuser des annonces et d’en mesurer l’efficacité.
+      </p>
+      <p>
+        Pour en savoir plus sur l’utilisation des données par Google&nbsp;:
+        <a
+          href="https://policies.google.com/technologies/ads"
+          target="_blank"
+          rel="noopener"
+        >
+          https://policies.google.com/technologies/ads
+        </a>
+      </p>
+    </section>
 
-    <div id="footer-placeholder"></div>
+    <!-- SECTION 4 -->
+    <section class="legal-section">
+      <h2>4. Gestion de votre consentement</h2>
+      <p>
+        Lors de votre première visite, un bandeau de consentement vous permet
+        d’accepter ou de refuser les cookies non essentiels.
+      </p>
+      <p>
+        Vous pouvez modifier vos choix à tout moment via le bouton
+        <strong>«&nbsp;Gérer mes cookies&nbsp;»</strong> présent sur le site.
+      </p>
+    </section>
 
-    <script src="/assets/js/main.js"></script>
-  </body>
+    <!-- SECTION 5 -->
+    <section class="legal-section">
+      <h2>5. Paramètres du navigateur</h2>
+      <p>
+        Vous pouvez également configurer votre navigateur pour bloquer ou
+        supprimer les cookies. Cela peut toutefois limiter certaines
+        fonctionnalités du site.
+      </p>
+    </section>
+
+    <!-- SECTION 6 -->
+    <section class="legal-section">
+      <h2>6. Contact</h2>
+      <p>
+        Pour toute question concernant les cookies ou la confidentialité, vous
+        pouvez contacter&nbsp;:
+      </p>
+      <p>
+        <strong>[Ton nom / Ta société]</strong><br />
+        Email&nbsp;: <strong>[Ton email]</strong>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER (chargé par main.js) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS (RELATIF) -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
