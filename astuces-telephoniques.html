@@ -1,25 +1,24 @@
+<!doctype html>
+<html lang="fr">
+
+<!-- 0) Le <base> doit être inséré AVANT le <head> -->
+<script>
+  if (location.hostname.includes("github.io")) {
+    document.write('<base href="/prefixetel/">');
+  }
+</script>
+
 <head>
 
-  <!-- 1) On applique le <base> AVANT TOUT -->
-  <script>
-    const isGithub = location.hostname.includes("github.io");
-    if (isGithub) {
-      document.write('<base href="/prefixetel/">');
-    }
-  </script>
-
-  <!-- 2) On charge meta.html AVEC UN CHEMIN RELATIF -->
+  <!-- 1) Charger meta.html -->
   <script>
     fetch("partials/meta.html")
-      .then((r) => r.text())
-      .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
   </script>
 
-  <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
-  <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
-
-    <title>Astuces téléphoniques | prefixeTel</title>
-  </head>
+  <title>Astuces téléphoniques | prefixeTel</title>
+</head>
 
   <body>
     <div id="header-placeholder"></div>
