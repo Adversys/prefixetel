@@ -4,7 +4,7 @@
 // ------------------------------------------------------------
 
 async function loadCountries() {
-  const res = await fetch("/data/countries.json");
+  const res = await fetch("data/countries.json");
   const countries = await res.json();
 
   const container = document.getElementById("countries-container");
