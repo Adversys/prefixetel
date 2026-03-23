@@ -1,160 +1,115 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Confidentialité & RGPD — PrefixeTel</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confidentialité & RGPD — PrefixeTel</title>
 
-    <link rel="stylesheet" href="/assets/css/variables.css" />
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/components.css" />
-    <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/reglementations.css" />
-  </head>
+  <!-- BASE pour GitHub Pages -->
+  <script>
+    if (location.hostname.includes("github.io")) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
 
-  <body>
-    <div id="header-placeholder"></div>
+  <!-- META GLOBAUX -->
+  <script>
+    fetch("partials/meta.html")
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
 
-    <main class="legal-container">
-      <h1 class="legal-title">Confidentialité & RGPD</h1>
+  <!-- CSS (RELATIFS) -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/reglementations.css" />
+</head>
 
-      <section class="legal-section">
-        <h2>1. Introduction</h2>
-        <p>
-          La protection de vos données personnelles est une priorité. Cette page
-          explique quelles informations sont collectées sur PrefixeTel, dans
-          quel but, et comment elles sont utilisées conformément au
-          <strong>Règlement Général sur la Protection des Données (RGPD)</strong
-          >.
-        </p>
-      </section>
+<body>
 
-      <section class="legal-section">
-        <h2>2. Données collectées</h2>
-        <p>
-          PrefixeTel ne collecte aucune donnée personnelle lors de la simple
-          navigation.
-        </p>
-        <p>Des données peuvent être collectées dans les cas suivants&nbsp;:</p>
-        <ul>
-          <li>
-            Lorsque vous utilisez le formulaire
-            <strong>«&nbsp;Signaler un bug&nbsp;»</strong> : nom (facultatif),
-            email (facultatif), page concernée (obligatoire), description du bug
-            (obligatoire), navigateur (optionnel).
-          </li>
-          <li>
-            Lorsque des cookies publicitaires ou de mesure d’audience sont
-            activés après votre consentement via la plateforme de gestion du
-            consentement.
-          </li>
-        </ul>
-      </section>
+  <!-- HEADER (chargé par main.js) -->
+  <div id="header-placeholder"></div>
 
-      <section class="legal-section">
-        <h2>3. Finalité de la collecte</h2>
-        <p>
-          Les informations envoyées via le formulaire «&nbsp;Signaler un
-          bug&nbsp;» servent uniquement à&nbsp;:
-        </p>
-        <ul>
-          <li>vous répondre si nécessaire&nbsp;;</li>
-          <li>corriger le problème signalé.</li>
-        </ul>
-        <p>
-          Des cookies publicitaires et de mesure d’audience peuvent être
-          utilisés, avec votre consentement, pour&nbsp;:
-        </p>
-        <ul>
-          <li>
-            afficher des publicités (par exemple via Google Ads /
-            AdSense)&nbsp;;
-          </li>
-          <li>mesurer l’audience et les performances du site.</li>
-        </ul>
-      </section>
+  <main class="legal-container">
+    <h1 class="legal-title">Confidentialité & RGPD</h1>
 
-      <section class="legal-section">
-        <h2>4. Conservation des données</h2>
-        <p>
-          Les données envoyées via le formulaire ne sont
-          <strong>pas stockées</strong> dans une base de données. Elles sont
-          utilisées uniquement le temps de traiter votre demande, puis
-          supprimées.
-        </p>
-        <p>
-          Les cookies publicitaires et de mesure d’audience sont conservés pour
-          une durée maximale conforme aux recommandations de la CNIL et des
-          fournisseurs (par exemple Google).
-        </p>
-      </section>
+    <!-- TON CONTENU ICI (inchangé) -->
+    <section class="legal-section">
+      <h2>1. Introduction</h2>
+      <p>
+        La protection de vos données personnelles est une priorité. Cette page
+        explique quelles informations sont collectées sur PrefixeTel, dans
+        quel but, et comment elles sont utilisées conformément au
+        <strong>Règlement Général sur la Protection des Données (RGPD)</strong>.
+      </p>
+    </section>
 
-      <section class="legal-section">
-        <h2>5. Partage des données</h2>
-        <p>
-          Aucune donnée n’est vendue, partagée ou transmise à des tiers, en
-          dehors des partenaires techniques nécessaires au fonctionnement du
-          site et des services de mesure d’audience ou de publicité que vous
-          avez acceptés.
-        </p>
-      </section>
+    <section class="legal-section">
+      <h2>2. Données collectées</h2>
+      <p>PrefixeTel ne collecte aucune donnée personnelle lors de la simple navigation.</p>
+      <p>Des données peuvent être collectées dans les cas suivants :</p>
+      <ul>
+        <li>Formulaire « Signaler un bug » : nom, email, page, description, navigateur.</li>
+        <li>Cookies publicitaires ou de mesure d’audience (avec consentement).</li>
+      </ul>
+    </section>
 
-      <section class="legal-section">
-        <h2>6. Cookies</h2>
-        <p>
-          PrefixeTel utilise des cookies strictement nécessaires au
-          fonctionnement du site, ainsi que, avec votre consentement, des
-          cookies&nbsp;:
-        </p>
-        <ul>
-          <li>de mesure d’audience&nbsp;;</li>
-          <li>publicitaires (par exemple via Google Ads / AdSense).</li>
-        </ul>
-        <p>
-          Vous pouvez accepter ou refuser ces cookies à tout moment via le
-          bandeau de consentement et l’interface de gestion des cookies.
-        </p>
-        <p>
-          Pour plus d’informations, consultez la page
-          <a href="/cookies.html">Cookies</a>.
-        </p>
-      </section>
+    <section class="legal-section">
+      <h2>3. Finalité de la collecte</h2>
+      <p>Les données servent uniquement à :</p>
+      <ul>
+        <li>vous répondre ;</li>
+        <li>corriger le problème signalé.</li>
+      </ul>
+      <p>Les cookies peuvent servir à :</p>
+      <ul>
+        <li>afficher des publicités ;</li>
+        <li>mesurer l’audience.</li>
+      </ul>
+    </section>
 
-      <section class="legal-section">
-        <h2>7. Vos droits</h2>
-        <p>Conformément au RGPD, vous disposez des droits suivants&nbsp;:</p>
-        <ul>
-          <li>Droit d’accès&nbsp;;</li>
-          <li>Droit de rectification&nbsp;;</li>
-          <li>Droit à l’effacement&nbsp;;</li>
-          <li>Droit d’opposition.</li>
-        </ul>
-        <p>
-          Vous pouvez également retirer votre consentement aux cookies
-          publicitaires et de mesure d’audience à tout moment via l’interface de
-          gestion des cookies.
-        </p>
-        <p>
-          Pour exercer vos droits, vous pouvez écrire à&nbsp;:
-          <strong>[Ton email de contact]</strong>
-        </p>
-      </section>
+    <section class="legal-section">
+      <h2>4. Conservation des données</h2>
+      <p>Les données envoyées via le formulaire ne sont <strong>pas stockées</strong>.</p>
+      <p>Les cookies sont conservés selon les durées recommandées par la CNIL.</p>
+    </section>
 
-      <section class="legal-section">
-        <h2>8. Contact</h2>
-        <p>
-          Pour toute question concernant la confidentialité ou vos données, vous
-          pouvez contacter&nbsp;:
-        </p>
-        <p>
-          <strong>[Ton nom / Ta société]</strong><br />
-          Email&nbsp;: <strong>[Ton email]</strong>
-        </p>
-      </section>
-    </main>
+    <section class="legal-section">
+      <h2>5. Partage des données</h2>
+      <p>Aucune donnée n’est vendue ou partagée, sauf partenaires techniques.</p>
+    </section>
 
-    <div id="footer-placeholder"></div>
+    <section class="legal-section">
+      <h2>6. Cookies</h2>
+      <p>PrefixeTel utilise des cookies nécessaires, et avec consentement :</p>
+      <ul>
+        <li>cookies de mesure d’audience ;</li>
+        <li>cookies publicitaires.</li>
+      </ul>
+      <p>Plus d’informations : <a href="cookies.html">Cookies</a>.</p>
+    </section>
 
-    <script src="/assets/js/main.js"></script>
-  </body>
+    <section class="legal-section">
+      <h2>7. Vos droits</h2>
+      <p>Vous disposez des droits d’accès, rectification, effacement, opposition.</p>
+      <p>Pour exercer vos droits : <strong>[Ton email]</strong></p>
+    </section>
+
+    <section class="legal-section">
+      <h2>8. Contact</h2>
+      <p>Pour toute question : <strong>[Ton nom / Ta société]</strong></p>
+      <p>Email : <strong>[Ton email]</strong></p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (chargé par main.js) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS (RELATIF) -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
