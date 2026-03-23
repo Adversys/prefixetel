@@ -12,7 +12,7 @@
 
   <!-- META GLOBAUX (chargés dynamiquement) -->
   <script>
-    fetch("partials/meta.html")
+    fetch("./partials/meta.html")
       .then(r => r.text())
       .then(html => document.head.insertAdjacentHTML("beforeend", html));
   </script>
@@ -89,7 +89,7 @@
   <!-- FOOTER -->
   <div id="footer"></div>
   <script>
-    fetch("partials/footer.html")
+    fetch("./partials/footer.html")
       .then(r => r.text())
       .then(html => document.getElementById("footer").innerHTML = html);
   </script>
