@@ -1,92 +1,110 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentions légales — PrefixeTel</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales — PrefixeTel</title>
 
-    <link rel="stylesheet" href="/assets/css/variables.css" />
-    <link rel="stylesheet" href="/assets/css/base.css" />
-    <link rel="stylesheet" href="/assets/css/components.css" />
-    <link rel="stylesheet" href="/assets/css/layout.css" />
-    <link rel="stylesheet" href="/assets/css/reglementations.css" />
-  </head>
+  <!-- BASE pour GitHub Pages -->
+  <script>
+    if (location.hostname.includes("github.io")) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
 
-  <body>
-    <!-- HEADER -->
-    <div id="header-placeholder"></div>
+  <!-- META GLOBAUX -->
+  <script>
+    fetch("partials/meta.html")
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
 
-    <main class="legal-container">
-      <h1 class="legal-title">Mentions légales</h1>
+  <!-- CSS (RELATIFS) -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/reglementations.css" />
+</head>
 
-      <section class="legal-section">
-        <h2>1. Éditeur du site</h2>
-        <p>Le site <strong>PrefixeTel</strong> est édité par :</p>
-        <p>
-          <strong>[Ton Nom / Ta Société]</strong><br />
-          [Adresse complète]<br />
-          [Code postal, Ville, Pays]<br />
-          Email : [Ton email de contact]<br />
-          SIREN / SIRET : [Numéro si applicable]
-        </p>
-      </section>
+<body>
 
-      <section class="legal-section">
-        <h2>2. Hébergement</h2>
-        <p>Le site est hébergé par :</p>
-        <p>
-          <strong>[Nom de l’hébergeur]</strong><br />
-          [Adresse de l’hébergeur]<br />
-          [Site web de l’hébergeur]
-        </p>
-      </section>
+  <!-- HEADER (chargé par main.js) -->
+  <div id="header-placeholder"></div>
 
-      <section class="legal-section">
-        <h2>3. Propriété intellectuelle</h2>
-        <p>
-          L’ensemble du contenu du site (textes, images, logos, structure,
-          design) est protégé par le droit d’auteur. Toute reproduction,
-          distribution ou utilisation sans autorisation est interdite.
-        </p>
-      </section>
+  <main class="legal-container">
+    <h1 class="legal-title">Mentions légales</h1>
 
-      <section class="legal-section">
-        <h2>4. Responsabilité</h2>
-        <p>
-          Les informations fournies sur PrefixeTel sont données à titre
-          indicatif. Malgré le soin apporté à leur exactitude, l’éditeur ne peut
-          garantir l’absence totale d’erreurs ou d’omissions.
-        </p>
-      </section>
+    <section class="legal-section">
+      <h2>1. Éditeur du site</h2>
+      <p>Le site <strong>PrefixeTel</strong> est édité par :</p>
+      <p>
+        <strong>[Ton Nom / Ta Société]</strong><br />
+        [Adresse complète]<br />
+        [Code postal, Ville, Pays]<br />
+        Email : [Ton email de contact]<br />
+        SIREN / SIRET : [Numéro si applicable]
+      </p>
+    </section>
 
-      <section class="legal-section">
-        <h2>5. Données personnelles</h2>
-        <p>
-          PrefixeTel ne collecte aucune donnée personnelle sans votre
-          consentement. Les informations fournies via le formulaire “Signaler un
-          bug” (nom, email, description) sont utilisées uniquement pour vous
-          répondre et ne sont <strong>jamais conservées</strong>.
-        </p>
-        <p>
-          Pour toute demande de suppression ou d’information, vous pouvez écrire
-          à :
-          <strong>[Ton email]</strong>
-        </p>
-      </section>
+    <section class="legal-section">
+      <h2>2. Hébergement</h2>
+      <p>Le site est hébergé par :</p>
+      <p>
+        <strong>[Nom de l’hébergeur]</strong><br />
+        [Adresse de l’hébergeur]<br />
+        [Site web de l’hébergeur]
+      </p>
+    </section>
 
-      <section class="legal-section">
-        <h2>6. Cookies</h2>
-        <p>
-          PrefixeTel n’utilise <strong>aucun cookie de suivi</strong>. Seuls des
-          cookies strictement nécessaires au fonctionnement du site peuvent être
-          utilisés.
-        </p>
-      </section>
-    </main>
+    <section class="legal-section">
+      <h2>3. Propriété intellectuelle</h2>
+      <p>
+        L’ensemble du contenu du site (textes, images, logos, structure,
+        design) est protégé par le droit d’auteur. Toute reproduction,
+        distribution ou utilisation sans autorisation est interdite.
+      </p>
+    </section>
 
-    <!-- FOOTER -->
-    <div id="footer-placeholder"></div>
+    <section class="legal-section">
+      <h2>4. Responsabilité</h2>
+      <p>
+        Les informations fournies sur PrefixeTel sont données à titre
+        indicatif. Malgré le soin apporté à leur exactitude, l’éditeur ne peut
+        garantir l’absence totale d’erreurs ou d’omissions.
+      </p>
+    </section>
 
-    <script src="/assets/js/main.js"></script>
-  </body>
+    <section class="legal-section">
+      <h2>5. Données personnelles</h2>
+      <p>
+        PrefixeTel ne collecte aucune donnée personnelle sans votre
+        consentement. Les informations fournies via le formulaire “Signaler un
+        bug” (nom, email, description) sont utilisées uniquement pour vous
+        répondre et ne sont <strong>jamais conservées</strong>.
+      </p>
+      <p>
+        Pour toute demande de suppression ou d’information, vous pouvez écrire
+        à :
+        <strong>[Ton email]</strong>
+      </p>
+    </section>
+
+    <section class="legal-section">
+      <h2>6. Cookies</h2>
+      <p>
+        PrefixeTel n’utilise <strong>aucun cookie de suivi</strong>. Seuls des
+        cookies strictement nécessaires au fonctionnement du site peuvent être
+        utilisés.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER (chargé par main.js) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS (RELATIF) -->
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
