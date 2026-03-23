@@ -1,24 +1,22 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <script>
-      fetch("./partials/meta.html")
-        .then((r) => r.text())
-        .then((html) => document.head.insertAdjacentHTML("beforeend", html));
-    </script>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="/assets/img/fav.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="128x128"
-      href="/assets/img/fav.png"
-    />
-    <link rel="shortcut icon" type="image/png" href="/assets/img/fav.png" />
+<head>
+
+  <!-- 1) On applique le <base> AVANT TOUT -->
+  <script>
+    const isGithub = location.hostname.includes("github.io");
+    if (isGithub) {
+      document.write('<base href="/prefixetel/">');
+    }
+  </script>
+
+  <!-- 2) On charge meta.html AVEC UN CHEMIN RELATIF -->
+  <script>
+    fetch("partials/meta.html")
+      .then((r) => r.text())
+      .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+  </script>
+
+  <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
+  <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
 
     <title>Astuces téléphoniques | prefixeTel</title>
   </head>
@@ -206,6 +204,6 @@
     </main>
 
     <div id="footer-placeholder"></div>
-    <script src="/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
