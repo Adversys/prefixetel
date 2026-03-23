@@ -5,7 +5,7 @@ let countries = [];
 ========================= */
 async function loadCountries() {
   try {
-    const res = await fetch("/data/countries.json");
+    const res = await fetch("data/countries.json");
     countries = await res.json();
 
     countries.sort((a, b) => a.name.localeCompare(b.name));
@@ -204,8 +204,8 @@ document.addEventListener("click", (e) => {
 ========================= */
 async function loadPartials() {
   try {
-    const header = await fetch("/partials/header.html").then((r) => r.text());
-    const footer = await fetch("/partials/footer.html").then((r) => r.text());
+    const header = await fetch("partials/header.html").then((r) => r.text());
+    const footer = await fetch("partials/footer.html").then((r) => r.text());
 
     const headerEl = document.getElementById("header");
     const footerEl = document.getElementById("footer");
