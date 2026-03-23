@@ -21,38 +21,18 @@
   <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
   <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
 
-  <!-- SEO SPÉCIFIQUE -->
+  <!-- SEO -->
   <title>Simulateur d’appel international | Convertir un numéro en format international (+XX)</title>
+  <meta name="description" content="Convertissez instantanément n’importe quel numéro en format international." />
 
-  <meta name="description" content="Convertissez instantanément n’importe quel numéro en format international. Simulateur d’appel international simple, rapide et précis : indicatifs, préfixes, formats +XX, appels depuis et vers tous les pays." />
-
-  <meta name="keywords" content="simulateur appel international, format international, indicatif pays, préfixe téléphonique, numéro international, convertir numéro international, appeler étranger, code pays" />
-
-  <link rel="canonical" href="https://prefixetel.fr/simulateur/" />
-
-  <meta property="og:title" content="Simulateur d’appel international" />
-  <meta property="og:description" content="Convertissez instantanément un numéro en format international (+XX). Simple, rapide et précis." />
-  <meta property="og:url" content="https://prefixetel.fr/simulateur/" />
-  <meta property="og:image" content="https://prefixetel.fr/assets/og-simulateur.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Simulateur d’appel international" />
-  <meta name="twitter:description" content="Convertissez instantanément un numéro en format international (+XX)." />
-  <meta name="twitter:image" content="https://prefixetel.fr/assets/og-simulateur.png" />
-
-  <!-- CSS RELATIF -->
+  <!-- CSS -->
   <link rel="stylesheet" href="simulateur/css/simulateur.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <div id="header"></div>
-  <script>
-    fetch("partials/header.html")
-      .then(r => r.text())
-      .then(html => document.getElementById("header").innerHTML = html);
-  </script>
+  <!-- HEADER (chargé par main.js) -->
+  <div id="header-placeholder"></div>
 
   <main class="simulator-container">
     <h1>Simulateur d'appel international</h1>
@@ -85,15 +65,11 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
-  <div id="footer"></div>
-  <script>
-    fetch("partials/footer.html")
-      .then(r => r.text())
-      .then(html => document.getElementById("footer").innerHTML = html);
-  </script>
+  <!-- FOOTER (chargé par main.js) -->
+  <div id="footer-placeholder"></div>
 
-  <!-- JS RELATIF -->
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
   <script src="simulateur/js/simulateur.js"></script>
 
 </body>
