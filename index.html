@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="fr">
   <head>
+      <script>
+    const isGithub = location.hostname.includes("github.io");
+    if (isGithub) {
+      document.write('<base href="/prefixtel/">');
+    }
+  </script>
     <!-- Charge les meta-tags globaux depuis ton partial -->
     <script>
       fetch("/partials/meta.html")
