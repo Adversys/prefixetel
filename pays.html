@@ -10,11 +10,11 @@
     }
   </script>
 
-  <!-- 2) On charge meta.html AVEC UN CHEMIN RELATIF -->
+  <!-- 2) Charger meta.html -->
   <script>
     fetch("partials/meta.html")
-      .then((r) => r.text())
-      .then((html) => document.head.insertAdjacentHTML("beforeend", html));
+      .then(r => r.text())
+      .then(html => document.head.insertAdjacentHTML("beforeend", html));
   </script>
 
   <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
@@ -25,7 +25,6 @@
 
 <body>
 
-  <!-- Header chargé dynamiquement -->
   <div id="header-placeholder"></div>
 
   <main class="site-main">
@@ -48,10 +47,11 @@
     </section>
   </main>
 
-  <!-- Footer chargé dynamiquement -->
   <div id="footer-placeholder"></div>
 
-  <script src="assets/js/pays.js"></script>
+  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/pays.js"></script>
+
 </body>
 </html>
