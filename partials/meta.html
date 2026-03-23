@@ -1,4 +1,9 @@
-
+<script>
+  const isGithub = location.hostname.includes("github.io");
+  if (isGithub) {
+    document.write('<base href="/prefixtel/">');
+  }
+</script>
 
 
 <!-- ========== META GLOBAUX ========== -->
