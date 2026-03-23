@@ -10,9 +10,9 @@
     }
   </script>
 
-  <!-- META GLOBAUX (chargés dynamiquement) -->
+  <!-- META GLOBAUX -->
   <script>
-    fetch("./partials/meta.html")
+    fetch("partials/meta.html")
       .then(r => r.text())
       .then(html => document.head.insertAdjacentHTML("beforeend", html));
   </script>
@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" sizes="128x128" href="assets/img/fav.png" />
   <link rel="shortcut icon" type="image/png" href="assets/img/fav.png" />
 
-  <!-- SEO SPÉCIFIQUE À LA PAGE -->
+  <!-- SEO SPÉCIFIQUE -->
   <title>Simulateur d’appel international | Convertir un numéro en format international (+XX)</title>
 
   <meta name="description" content="Convertissez instantanément n’importe quel numéro en format international. Simulateur d’appel international simple, rapide et précis : indicatifs, préfixes, formats +XX, appels depuis et vers tous les pays." />
@@ -40,7 +40,7 @@
   <meta name="twitter:description" content="Convertissez instantanément un numéro en format international (+XX)." />
   <meta name="twitter:image" content="https://prefixetel.fr/assets/og-simulateur.png" />
 
-  <!-- CSS RELATIF (fonctionne avec <base>) -->
+  <!-- CSS RELATIF -->
   <link rel="stylesheet" href="simulateur/css/simulateur.css" />
 </head>
 
@@ -54,7 +54,6 @@
       .then(html => document.getElementById("header").innerHTML = html);
   </script>
 
-  <!-- CONTENU -->
   <main class="simulator-container">
     <h1>Simulateur d'appel international</h1>
 
@@ -89,12 +88,12 @@
   <!-- FOOTER -->
   <div id="footer"></div>
   <script>
-    fetch("./partials/footer.html")
+    fetch("partials/footer.html")
       .then(r => r.text())
       .then(html => document.getElementById("footer").innerHTML = html);
   </script>
 
-  <!-- JS RELATIF (fonctionne avec <base>) -->
+  <!-- JS RELATIF -->
   <script src="simulateur/js/simulateur.js"></script>
 
 </body>
